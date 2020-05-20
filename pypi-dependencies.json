@@ -37,6 +37,11 @@
         },
         {
             "type": "file",
+            "url": "https://files.pythonhosted.org/packages/fb/fb/eaffd99fdce4545e458ebfd8b19c05eb0354ad921b345794627f4c548a3b/python-mpv-jsonipc-1.1.11.tar.gz",
+            "sha256": "96731b9c784129e5dfe26a88372c35b7ca533483652fcdb433da98e7d64e2655"
+        },
+        {
+            "type": "file",
             "url": "https://files.pythonhosted.org/packages/68/1a/f27de07a8a304ad5fa817bbe383d1238ac4396da447fa11ed937039fa04b/itsdangerous-1.1.0.tar.gz",
             "sha256": "321b033d07f2a4136d3ec762eac9f16a10ccd60f53c0c91af90217ace7ba1f19"
         },
@@ -57,6 +62,11 @@
         },
         {
             "type": "file",
+            "url": "https://files.pythonhosted.org/packages/0d/55/6a9434fbc78c227689c6fa1e8d4d03a8947521bfb4fe4d6e18cedd64d5ba/jellyfin_mpv_shim-1.5.10-py3-none-any.whl",
+            "sha256": "0fcf28d3db2bb9520ff14b5c246a0afe7d33bf9067f3d117433e8cbe6b19c4a1"
+        },
+        {
+            "type": "file",
             "url": "https://files.pythonhosted.org/packages/d2/3d/fa76db83bf75c4f8d338c2fd15c8d33fdd7ad23a9b5e57eb6c5de26b430e/click-7.1.2-py2.py3-none-any.whl",
             "sha256": "dacca89f4bfadd5de3d7489b7c8a566eee0d3676333fbb50030263894c38c0dc"
         },
@@ -64,16 +74,6 @@
             "type": "file",
             "url": "https://files.pythonhosted.org/packages/30/9e/f663a2aa66a09d838042ae1a2c5659828bb9b41ea3a6efa20a20fd92b121/Jinja2-2.11.2-py2.py3-none-any.whl",
             "sha256": "f0a4641d3cf955324a89c04f3d94663aa4d638abe8f733ecd3582848e1c37035"
-        },
-        {
-            "type": "file",
-            "url": "https://files.pythonhosted.org/packages/a8/ec/8899310cf2c88592af2bb478de104596e9e5e1939e7058f1917db3368140/python-mpv-jsonipc-1.1.10.tar.gz",
-            "sha256": "d348b275504778d83e3ba9e6757c2f1190d2c03b7fd93e68ea51e9458e84166d"
-        },
-        {
-            "type": "file",
-            "url": "https://files.pythonhosted.org/packages/89/ea/b394cda2f0675a0a664ebb8810f26e47dbee0ef9a849d2e1726116d0469f/python_mpv_jsonipc-1.1.10-py3-none-any.whl",
-            "sha256": "799381daba7863cadc4f72174e0c29641c051aa029b27246dccd7c2a2912311f"
         },
         {
             "type": "file",
@@ -147,13 +147,13 @@
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/05/8c/40cd6949373e23081b3ea20d5594ae523e681b6f472e600fbc95ed046a36/urllib3-1.25.9.tar.gz",
-            "sha256": "3018294ebefce6572a474f0604c2021e33b3fd8006ecd11d62107a5d2a963527"
+            "url": "https://files.pythonhosted.org/packages/08/3d/4a97bbdc9d7900a7f46f32c428605ae743d885f14993ba6b828b20402a3a/jellyfin-mpv-shim-1.5.10.tar.gz",
+            "sha256": "d3b227d1128db547d40bc18b43c2e67f67301a01ed0f05e62bd5cffff2415ca2"
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/d5/c5/257d2bcb25ac132b3dd586f74f7bfd6045ffb9f27d9e00d9a1adfb262010/jellyfin-mpv-shim-1.5.9.tar.gz",
-            "sha256": "b640b01e6a7940a7195127eb98b290df3b0343ebcc76a6f0c390356b17385abd"
+            "url": "https://files.pythonhosted.org/packages/05/8c/40cd6949373e23081b3ea20d5594ae523e681b6f472e600fbc95ed046a36/urllib3-1.25.9.tar.gz",
+            "sha256": "3018294ebefce6572a474f0604c2021e33b3fd8006ecd11d62107a5d2a963527"
         },
         {
             "type": "file",
@@ -192,13 +192,13 @@
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/10/27/a33329150147594eff0ea4c33c2036c0eadd933141055be0ff911f7f8d04/Werkzeug-1.0.1.tar.gz",
-            "sha256": "6c80b1e5ad3665290ea39320b91e1be1e0d5f60652b964a3070216de83d2e47c"
+            "url": "https://files.pythonhosted.org/packages/dd/f2/6d304110d2537af8057277bfc0bbc05bf28820d756d079b49701a7429abc/python_mpv_jsonipc-1.1.11-py3-none-any.whl",
+            "sha256": "d6e95b54d83f0c8c8df649a5fd7f90f7bd4558bf2ad3f110e2d7a62b82f33d37"
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/a7/ad/4b823f9ef169c9575c68546ec0fe5d2df8341a32c9468f886c4bab6c637a/jellyfin_mpv_shim-1.5.9-py3-none-any.whl",
-            "sha256": "e1f298d5acd3bbc6aada55335a1cee60b2f72fd9307aa673e70a249f91356ce8"
+            "url": "https://files.pythonhosted.org/packages/10/27/a33329150147594eff0ea4c33c2036c0eadd933141055be0ff911f7f8d04/Werkzeug-1.0.1.tar.gz",
+            "sha256": "6c80b1e5ad3665290ea39320b91e1be1e0d5f60652b964a3070216de83d2e47c"
         }
     ]
 }
