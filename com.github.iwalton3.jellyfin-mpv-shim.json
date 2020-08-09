@@ -221,6 +221,107 @@
       ]
     },
     {
+      "name": "gir1.2-appindicator3",
+      "cleanup": [
+        "/bin",
+        "/include",
+        "/lib/pkgconfig",
+        "/share/man"
+      ],
+      "config-opts": [
+        "--with-gtk=3"
+      ],
+      "make-install-args": [
+        "PREFIX=/app"
+      ],
+      "rm-configure": true,
+      "sources": [
+        {
+          "type": "archive",
+          "url": "http://deb.debian.org/debian/pool/main/liba/libappindicator/libappindicator_0.4.92.orig.tar.gz",
+          "sha256": "b034263908f79a321542d3aaa32cc30381a3fbed5ee42af4347caaff4a853803"
+        },
+        {
+          "type": "archive",
+          "url": "http://deb.debian.org/debian/pool/main/liba/libappindicator/libappindicator_0.4.92-8.debian.tar.xz",
+          "sha256": "537ddb7af4e94d9f47cceaaf6ad63a35e82e05e3481066529d977c11896a6455"
+        },
+        {
+          "type": "shell",
+          "commands": [
+            "for patch in $(cat patches/series); do patch -p1 < patches/$patch; done"
+          ]
+        }
+      ],
+      "modules": [
+        {
+          "name": "libindicator",
+          "sources": [
+            {
+              "type": "archive",
+              "url": "http://deb.debian.org/debian/pool/main/libi/libindicator/libindicator_0.5.0.orig.tar.gz",
+              "sha256": "f05f5e329d55d32000606b9d75d1b2b722b682e440cf7e325440811836554622"
+            },
+            {
+              "type": "shell",
+              "commands": [
+                "sed -i 's|-Werror||g' ./libindicator/Makefile.*"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "libdbusmenu",
+          "sources": [
+            {
+              "type": "archive",
+              "url": "http://deb.debian.org/debian/pool/main/libd/libdbusmenu/libdbusmenu_18.10.20180917~bzr492+repack1.orig.tar.xz",
+              "sha256": "41298b926573419f21864205317461750b833c596af6ab0bd206e13336f8cee3"
+            }
+          ],
+          "config-opts": [
+            "--with-gtk=3",
+            "--disable-dumper"
+          ],
+          "make-install-args": [
+            "INTROSPECTION_TYPELIBDIR=/app/lib/girepository-1.0"
+          ],
+          "modules": [
+            {
+              "name": "gnome-common",
+              "sources": [
+                {
+                  "type": "archive",
+                  "url": "http://deb.debian.org/debian/pool/main/g/gnome-common/gnome-common_3.18.0.orig.tar.xz",
+                  "sha256": "22569e370ae755e04527b76328befc4c73b62bfd4a572499fde116b8318af8cf"
+                }
+              ]
+            },
+            {
+              "name": "intltool",
+              "sources": [
+                {
+                  "type": "archive",
+                  "url": "http://deb.debian.org/debian/pool/main/i/intltool/intltool_0.51.0.orig.tar.gz",
+                  "sha256": "67c74d94196b153b774ab9f89b2fa6c6ba79352407037c8c14d5aeb334e959cd"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "libdbus-glib-1",
+          "sources": [
+            {
+              "type": "archive",
+              "url": "http://deb.debian.org/debian/pool/main/d/dbus-glib/dbus-glib_0.110.orig.tar.gz",
+              "sha256": "7ce4760cf66c69148f6bd6c92feaabb8812dee30846b24cd0f7395c436d7e825"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "jellyfin-mpv-shim",
       "buildsystem": "simple",
       "build-commands": [
