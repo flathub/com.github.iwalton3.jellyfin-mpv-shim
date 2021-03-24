@@ -12,11 +12,6 @@
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/5b/94/bbeccdc7981c1d160c73c9a4c8901393861bb05317495d10971e4c374222/jellyfin-mpv-shim-1.10.0.tar.gz",
-            "sha256": "2989d43ed71e241dcf65bd2f6de14844097b47f0522d1fb0384f3dfa39503e74"
-        },
-        {
-            "type": "file",
             "url": "https://files.pythonhosted.org/packages/27/da/1db3bf8bab82bae2266c86ff6f3d0f28db7d4568cbcb320c62372a8eea57/pystray-0.17.2-py2.py3-none-any.whl",
             "sha256": "b8fa8a708744117112f4958cc5b887e2fcaeaa4c0b1e5de62cca74bfb4a1a18b"
         },
@@ -42,6 +37,11 @@
         },
         {
             "type": "file",
+            "url": "https://files.pythonhosted.org/packages/8d/37/21ef553bd14f3503accfb68522d13311c2ae7f683f04fba16c5e5a6c00ed/jellyfin_apiclient_python-1.7.2-py3-none-any.whl",
+            "sha256": "ee1e1cfc5b186176368515633a332b5284a4787381ea89e7578ae6a122a0d7b2"
+        },
+        {
+            "type": "file",
             "url": "https://files.pythonhosted.org/packages/38/ed/87e71c6a17e545bb7af9c2f60f8c2ad7af760c1a0f1937ab866d8082f008/python-xlib-0.29.tar.gz",
             "sha256": "e4bcb756f4aa05be7b82ee21de0ba04d73414018727b42ebd9fbcf409ea75d13"
         },
@@ -54,11 +54,6 @@
             "type": "file",
             "url": "https://files.pythonhosted.org/packages/08/b7/dae7bc3853e6ca3e6f02e48a90cec1e614b78b81683cba1d6407e4d8e181/pypresence-4.2.0-py2.py3-none-any.whl",
             "sha256": "f477a874c4164193e47f7144d726b0ba2fe69afa2807e3bd944efe4c4c137fac"
-        },
-        {
-            "type": "file",
-            "url": "https://files.pythonhosted.org/packages/f1/43/85beeb0a81be410000cfddcbaaaff819060f35bfd6c633437bf765d2289e/jellyfin-apiclient-python-1.7.1.tar.gz",
-            "sha256": "35e00b6813bdf53776f5cbbbc4b7921aaec711bb2a80eb6cb5a5af7eb5a20bed"
         },
         {
             "type": "file",
@@ -97,11 +92,6 @@
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/1d/1a/99b945f40513894c3ef43d7ea76f75ace6712649145e00668f5b855b6e15/jellyfin_apiclient_python-1.7.1-py3-none-any.whl",
-            "sha256": "f0f6ac71a5a9e76d6fb40bd5aaf95f3e3f36cfd402fc75b6a7edc948313b402c"
-        },
-        {
-            "type": "file",
             "url": "https://files.pythonhosted.org/packages/8c/98/f2b4f38e23f74b5b57ba2576ce9a16c47a2627f8e92a407d4d37567032c8/pywebview-3.4.tar.gz",
             "sha256": "bb92c556e8ac7ccaaf9e24d86c437a73240850438490833d8b3ee3e60c50e040"
         },
@@ -134,6 +124,11 @@
             "type": "file",
             "url": "https://files.pythonhosted.org/packages/b9/2e/64db92e53b86efccfaea71321f597fa2e1b2bd3853d8ce658568f7a13094/MarkupSafe-1.1.1.tar.gz",
             "sha256": "29872e92839765e546828bb7754a68c418d927cd064fd4708fab9fe9c8bb116b"
+        },
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/1f/58/e7d98b70990e05faa830b302542d13fba586fe3e8372cd2d19a3d753cc07/jellyfin-mpv-shim-1.10.1.tar.gz",
+            "sha256": "6dc4c2a762b5cd18286c1022ec0eb654fa2033a926f838b144445610e9bd62ee"
         },
         {
             "type": "file",
@@ -199,6 +194,11 @@
             "type": "file",
             "url": "https://files.pythonhosted.org/packages/60/7a/e881b5abb54db0e6e671ab088d079c57ce54e8a01a3ca443f561ccadb37e/typing_extensions-3.7.4.3-py3-none-any.whl",
             "sha256": "7cb407020f00f7bfc3cb3e7881628838e69d8f3fcab2f64742a5e76b2f841918"
+        },
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/89/2f/52a8a9563c0b11448bd63dd0eb0f99c4101a12169c0cc0582a56be450253/jellyfin-apiclient-python-1.7.2.tar.gz",
+            "sha256": "9d22d46bdfe3013e97ac7a3bee45791d80713cefe585c58aa8f7e9112eee97d0"
         },
         {
             "type": "file",
