@@ -1,7 +1,7 @@
 {
   "app-id": "com.github.iwalton3.jellyfin-mpv-shim",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "3.36",
+  "runtime-version": "40",
   "sdk": "org.gnome.Sdk",
   "command": "jellyfin-mpv-desktop",
   "finish-args": [
@@ -107,31 +107,6 @@
               "commands": [
                 "sed -i 's|/usr/local|/app|' ./Makefile"
               ]
-            }
-          ]
-        },
-        {
-          "name": "libv4l2",
-          "cleanup": [
-            "/sbin",
-            "/bin",
-            "/include",
-            "/lib/*.la",
-            "/lib/*/*.la",
-            "/lib*/*/*/*.la",
-            "/lib/pkgconfig",
-            "/share/man"
-          ],
-          "config-opts": [
-            "--disable-static",
-            "--disable-bpf",
-            "--with-udevdir=/app/lib/udev"
-          ],
-          "sources": [
-            {
-              "type": "archive",
-              "url": "https://linuxtv.org/downloads/v4l-utils/v4l-utils-1.16.7.tar.bz2",
-              "sha256": "ee917a7e1af72c60c0532d9fdb9e48baf641d427aa7b009a9b2ca821f9e8e0d9"
             }
           ]
         },
