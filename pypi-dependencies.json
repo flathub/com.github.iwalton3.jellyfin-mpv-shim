@@ -47,6 +47,11 @@
         },
         {
             "type": "file",
+            "url": "https://files.pythonhosted.org/packages/ff/9f/2693e15cc2a7d834190593af88d24c92a8999b27d763295793a7316f6658/jellyfin-mpv-shim-1.10.2.tar.gz",
+            "sha256": "8af3645690beb907db700c90674c481b593530b220a648aa4cc5679286252726"
+        },
+        {
+            "type": "file",
             "url": "https://files.pythonhosted.org/packages/ee/ff/48bde5c0f013094d729fe4b0316ba2a24774b3ff1c52d924a8a4cb04078a/six-1.15.0-py2.py3-none-any.whl",
             "sha256": "8b74bedcbbbaca38ff6d7491d76f2b06b3592611af620f8426e82dddb04a5ced"
         },
@@ -102,13 +107,13 @@
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/9f/3d/0ca0ecde76a5da7f5c2d9be2b26047ff5e1f5b37f8256f558dec7423a345/python_mpv_jsonipc-1.1.13-py3-none-any.whl",
-            "sha256": "0f5d01491627c6d6beececb1b2a83cef7ec319740fa24e3d762419b74761df84"
+            "url": "https://files.pythonhosted.org/packages/66/90/0e4c5e791614e9137cf66a2b540b6d7c2b785529ba5ddebafcca91e3066f/jellyfin_mpv_shim-1.10.2-py3-none-any.whl",
+            "sha256": "e0aadf10d86a34444b051b5b259a1ed1ce0e6d7c70bbd22d76f26cb3996f7b91"
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/1c/e8/5b3ddae2d719584e18aeda465994c669f4043f8be981a1e060399ed8d351/jellyfin_mpv_shim-1.10.0-py3-none-any.whl",
-            "sha256": "0079c42226b3720d24b3ca5637035f68799c29f515649282998ecbd8a5d0666a"
+            "url": "https://files.pythonhosted.org/packages/9f/3d/0ca0ecde76a5da7f5c2d9be2b26047ff5e1f5b37f8256f558dec7423a345/python_mpv_jsonipc-1.1.13-py3-none-any.whl",
+            "sha256": "0f5d01491627c6d6beececb1b2a83cef7ec319740fa24e3d762419b74761df84"
         },
         {
             "type": "file",
@@ -124,11 +129,6 @@
             "type": "file",
             "url": "https://files.pythonhosted.org/packages/b9/2e/64db92e53b86efccfaea71321f597fa2e1b2bd3853d8ce658568f7a13094/MarkupSafe-1.1.1.tar.gz",
             "sha256": "29872e92839765e546828bb7754a68c418d927cd064fd4708fab9fe9c8bb116b"
-        },
-        {
-            "type": "file",
-            "url": "https://files.pythonhosted.org/packages/1f/58/e7d98b70990e05faa830b302542d13fba586fe3e8372cd2d19a3d753cc07/jellyfin-mpv-shim-1.10.1.tar.gz",
-            "sha256": "6dc4c2a762b5cd18286c1022ec0eb654fa2033a926f838b144445610e9bd62ee"
         },
         {
             "type": "file",
