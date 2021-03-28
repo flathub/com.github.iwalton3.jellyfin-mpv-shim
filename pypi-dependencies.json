@@ -47,11 +47,6 @@
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/ff/9f/2693e15cc2a7d834190593af88d24c92a8999b27d763295793a7316f6658/jellyfin-mpv-shim-1.10.2.tar.gz",
-            "sha256": "8af3645690beb907db700c90674c481b593530b220a648aa4cc5679286252726"
-        },
-        {
-            "type": "file",
             "url": "https://files.pythonhosted.org/packages/ee/ff/48bde5c0f013094d729fe4b0316ba2a24774b3ff1c52d924a8a4cb04078a/six-1.15.0-py2.py3-none-any.whl",
             "sha256": "8b74bedcbbbaca38ff6d7491d76f2b06b3592611af620f8426e82dddb04a5ced"
         },
@@ -107,8 +102,8 @@
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/66/90/0e4c5e791614e9137cf66a2b540b6d7c2b785529ba5ddebafcca91e3066f/jellyfin_mpv_shim-1.10.2-py3-none-any.whl",
-            "sha256": "e0aadf10d86a34444b051b5b259a1ed1ce0e6d7c70bbd22d76f26cb3996f7b91"
+            "url": "https://files.pythonhosted.org/packages/9f/50/f6019d4e168395e637927176c13b48fff170ba2ece1d14693cb63f886719/jellyfin-mpv-shim-1.10.3.tar.gz",
+            "sha256": "4e5ecff1227f66ec088bc4710d69217ddecb51deb7c6fe44860d54a9a6076f58"
         },
         {
             "type": "file",
@@ -144,6 +139,11 @@
             "type": "file",
             "url": "https://files.pythonhosted.org/packages/60/f0/dd2eb7911f948bf529f58f0c7931f6f6466f711bd6f1d81a69dc4edd4e2a/Pillow-8.1.2.tar.gz",
             "sha256": "b07c660e014852d98a00a91adfbe25033898a9d90a8f39beb2437d22a203fc44"
+        },
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/2a/75/4c462edc8623068730e5a874f0d6ea9a764f2844c34c6263662f7dfd467e/jellyfin_mpv_shim-1.10.3-py3-none-any.whl",
+            "sha256": "61bd362be5d9aac21bf1adc4e0f258c6a4fdf8229ff4fe27a94e02afdba78ffc"
         },
         {
             "type": "file",
