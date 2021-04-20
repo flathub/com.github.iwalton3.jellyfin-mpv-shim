@@ -22,13 +22,13 @@
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/6b/47/c14abc08432ab22dc18b9892252efaf005ab44066de871e72a38d6af464b/requests-2.25.1.tar.gz",
-            "sha256": "27973dd4a904a4f13b263a19c866c13b92a39ed1c964655f025f3f8d3d75b804"
+            "url": "https://files.pythonhosted.org/packages/e0/67/9c7368579787b476e6631a3c9b6457623ee4c383642b87a050490409d894/jellyfin_mpv_shim-2.0.0-py3-none-any.whl",
+            "sha256": "c18e3d1c2679cc9120ed46df32100cfde0b5a87669ac4a625802de79424eb0aa"
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/a6/54/9a6a9952addcebf2b7ace356a855d1d0f4518aeb7ee78d258c4782c835a2/jellyfin_mpv_shim-1.10.4-py3-none-any.whl",
-            "sha256": "f963f8b0360fb2bd6448c3388371cf4212c66a4c74e7c7142114b8716701d388"
+            "url": "https://files.pythonhosted.org/packages/6b/47/c14abc08432ab22dc18b9892252efaf005ab44066de871e72a38d6af464b/requests-2.25.1.tar.gz",
+            "sha256": "27973dd4a904a4f13b263a19c866c13b92a39ed1c964655f025f3f8d3d75b804"
         },
         {
             "type": "file",
@@ -62,33 +62,13 @@
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/76/ae/44b03b253d6fade317f32c24d100b3b35c2239807046a4c953c7b89fa49e/itsdangerous-1.1.0-py2.py3-none-any.whl",
-            "sha256": "b12271b2047cb23eeb98c8b5622e2e5c5e9abd9784a153e9d8ef9cb4dd09d749"
-        },
-        {
-            "type": "file",
-            "url": "https://files.pythonhosted.org/packages/68/1a/f27de07a8a304ad5fa817bbe383d1238ac4396da447fa11ed937039fa04b/itsdangerous-1.1.0.tar.gz",
-            "sha256": "321b033d07f2a4136d3ec762eac9f16a10ccd60f53c0c91af90217ace7ba1f19"
-        },
-        {
-            "type": "file",
             "url": "https://files.pythonhosted.org/packages/7e/c2/1eece8c95ddbc9b1aeb64f5783a9e07a286de42191b7204d67b7496ddf35/Jinja2-2.11.3-py2.py3-none-any.whl",
             "sha256": "03e47ad063331dd6a3f04a43eddca8a966a26ba0c5b7207a9a9e4e08f1b29419"
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/cf/8d/620f0f5bf548edb136ac3889f68131fa49afab9226a35fcf6c79fcbae93f/jellyfin-mpv-shim-1.10.4.tar.gz",
-            "sha256": "40cc9bebd4bc2e7e17d2852e2e92fabed831270abc7fe43845e35c92b37813e1"
-        },
-        {
-            "type": "file",
             "url": "https://files.pythonhosted.org/packages/ee/2d/9cdc2b527e127b4c9db64b86647d567985940ac3698eeabc7ffaccb4ea61/chardet-4.0.0.tar.gz",
             "sha256": "0d6f53a15db4120f2b08c94f11e7d93d2c911ee118b6b30a04ec3ee8310179fa"
-        },
-        {
-            "type": "file",
-            "url": "https://files.pythonhosted.org/packages/d2/3d/fa76db83bf75c4f8d338c2fd15c8d33fdd7ad23a9b5e57eb6c5de26b430e/click-7.1.2-py2.py3-none-any.whl",
-            "sha256": "dacca89f4bfadd5de3d7489b7c8a566eee0d3676333fbb50030263894c38c0dc"
         },
         {
             "type": "file",
@@ -99,11 +79,6 @@
             "type": "file",
             "url": "https://files.pythonhosted.org/packages/8c/98/f2b4f38e23f74b5b57ba2576ce9a16c47a2627f8e92a407d4d37567032c8/pywebview-3.4.tar.gz",
             "sha256": "bb92c556e8ac7ccaaf9e24d86c437a73240850438490833d8b3ee3e60c50e040"
-        },
-        {
-            "type": "file",
-            "url": "https://files.pythonhosted.org/packages/4e/0b/cb02268c90e67545a0e3a37ea1ca3d45de3aca43ceb7dbf1712fb5127d5d/Flask-1.1.2.tar.gz",
-            "sha256": "4efa1ae2d7c9865af48986de8aeb8504bf32c7f3d6fdc9353d34b21f4b127060"
         },
         {
             "type": "file",
@@ -147,11 +122,6 @@
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/f2/28/2a03252dfb9ebf377f40fba6a7841b47083260bf8bd8e737b0c6952df83f/Flask-1.1.2-py2.py3-none-any.whl",
-            "sha256": "8a4fdd8936eba2512e9c85df320a37e694c93945b33ef33c89946a340a238557"
-        },
-        {
-            "type": "file",
             "url": "https://files.pythonhosted.org/packages/6b/34/415834bfdafca3c5f451532e8a8d9ba89a21c9743a0c59fbd0205c7f9426/six-1.15.0.tar.gz",
             "sha256": "30639c035cdb23534cd4aa2dd52c3bf48f06e5f4a941509c8bafd8ce11080259"
         },
@@ -162,18 +132,13 @@
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/27/6f/be940c8b1f1d69daceeb0032fee6c34d7bd70e3e649ccac0951500b4720e/click-7.1.2.tar.gz",
-            "sha256": "d2b5255c7c6349bc1bd1e59e08cd12acbbd63ce649f2588755783aa94dfb6b1a"
+            "url": "https://files.pythonhosted.org/packages/14/ec/e02b4aeaaf59b2c4b3925dd7c9d7e8ea1fc5ba8c1e4e82dcbdc85e14583e/jellyfin-mpv-shim-2.0.0.tar.gz",
+            "sha256": "600667352ce00066126f8e5520d4423de5146dbb6e3a9fdb2db22acfff745ba8"
         },
         {
             "type": "file",
             "url": "https://files.pythonhosted.org/packages/a2/38/928ddce2273eaa564f6f50de919327bf3a00f091b5baba8dfa9460f3a8a8/idna-2.10-py2.py3-none-any.whl",
             "sha256": "b97d804b1e9b523befed77c48dacec60e6dcb0b5391d57af6a65a312a90648c0"
-        },
-        {
-            "type": "file",
-            "url": "https://files.pythonhosted.org/packages/cc/94/5f7079a0e00bd6863ef8f1da638721e9da21e5bacee597595b318f71d62e/Werkzeug-1.0.1-py2.py3-none-any.whl",
-            "sha256": "2de2a5db0baeae7b2d2664949077c2ac63fbd16d98da0ff71837f7d1dea3fd43"
         },
         {
             "type": "file",
@@ -219,11 +184,6 @@
             "type": "file",
             "url": "https://files.pythonhosted.org/packages/3b/84/c1f54d3527a7f454e22b5165a4c7cacd5ea81a6aa36b4506fabe667062fe/python-mpv-0.5.2.tar.gz",
             "sha256": "10c7ae61eff441602c7188595108391cdede153c15454772d8811c2bcb9e6823"
-        },
-        {
-            "type": "file",
-            "url": "https://files.pythonhosted.org/packages/10/27/a33329150147594eff0ea4c33c2036c0eadd933141055be0ff911f7f8d04/Werkzeug-1.0.1.tar.gz",
-            "sha256": "6c80b1e5ad3665290ea39320b91e1be1e0d5f60652b964a3070216de83d2e47c"
         }
     ]
 }
