@@ -22,11 +22,6 @@
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/e0/67/9c7368579787b476e6631a3c9b6457623ee4c383642b87a050490409d894/jellyfin_mpv_shim-2.0.0-py3-none-any.whl",
-            "sha256": "c18e3d1c2679cc9120ed46df32100cfde0b5a87669ac4a625802de79424eb0aa"
-        },
-        {
-            "type": "file",
             "url": "https://files.pythonhosted.org/packages/6b/47/c14abc08432ab22dc18b9892252efaf005ab44066de871e72a38d6af464b/requests-2.25.1.tar.gz",
             "sha256": "27973dd4a904a4f13b263a19c866c13b92a39ed1c964655f025f3f8d3d75b804"
         },
@@ -52,6 +47,11 @@
         },
         {
             "type": "file",
+            "url": "https://files.pythonhosted.org/packages/c3/ba/fdb4923345cda8fbbb35cb206ade6732afac976d68a4a4fb93ed03e4c8a4/jellyfin_mpv_shim-2.0.1-py3-none-any.whl",
+            "sha256": "b0afd42c8be06eb0611f33073857bf842b75d569b6f58b82c902174903a3c230"
+        },
+        {
+            "type": "file",
             "url": "https://files.pythonhosted.org/packages/08/b7/dae7bc3853e6ca3e6f02e48a90cec1e614b78b81683cba1d6407e4d8e181/pypresence-4.2.0-py2.py3-none-any.whl",
             "sha256": "f477a874c4164193e47f7144d726b0ba2fe69afa2807e3bd944efe4c4c137fac"
         },
@@ -67,13 +67,13 @@
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/ee/2d/9cdc2b527e127b4c9db64b86647d567985940ac3698eeabc7ffaccb4ea61/chardet-4.0.0.tar.gz",
-            "sha256": "0d6f53a15db4120f2b08c94f11e7d93d2c911ee118b6b30a04ec3ee8310179fa"
+            "url": "https://files.pythonhosted.org/packages/cf/42/5523ca72b16a53d0c1c7f163936907c852093a73d8d1d1e4adc9e0c52edd/jellyfin-mpv-shim-2.0.1.tar.gz",
+            "sha256": "3570cba90cc251f0cfa0a34fae6227e4531e74c298c6d0e191ac11136960fef2"
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/16/06/0f7367eafb692f73158e5c5cbca1aec798cdf78be5167f6415dd4205fa32/typing_extensions-3.7.4.3.tar.gz",
-            "sha256": "99d4073b617d30288f569d3f13d2bd7548c3a7e4c8de87db09a9d29bb3a4a60c"
+            "url": "https://files.pythonhosted.org/packages/ee/2d/9cdc2b527e127b4c9db64b86647d567985940ac3698eeabc7ffaccb4ea61/chardet-4.0.0.tar.gz",
+            "sha256": "0d6f53a15db4120f2b08c94f11e7d93d2c911ee118b6b30a04ec3ee8310179fa"
         },
         {
             "type": "file",
@@ -112,11 +112,6 @@
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/1a/4d/c238c3cf6b5dab7f74d4ba60f433c7ad05bcb04d3b833718df2e9381bd78/pydantic-1.8.1.tar.gz",
-            "sha256": "26cf3cb2e68ec6c0cfcb6293e69fb3450c5fd1ace87f46b64f678b0d29eac4c3"
-        },
-        {
-            "type": "file",
             "url": "https://files.pythonhosted.org/packages/38/03/9d1edf80c5af8b8babd5a55f4874f23928e36a3c7ce4c598a0ce6f5291b3/pystray-0.17.3.tar.gz",
             "sha256": "aa44edeaf68b0019f37cb6a6f340bba6640095e8295d3381742d3e2d0a11ca01"
         },
@@ -129,11 +124,6 @@
             "type": "file",
             "url": "https://files.pythonhosted.org/packages/cc/8a/27d9f5bf62392ff954b0a028eec95509062382c503aca9c7cadb34dfe92d/python-mpv-jsonipc-1.1.13.tar.gz",
             "sha256": "e6fc293c74934a9c71bb1037790f03e17338bc0f7b9d6994e8f4d226af1cf6e5"
-        },
-        {
-            "type": "file",
-            "url": "https://files.pythonhosted.org/packages/14/ec/e02b4aeaaf59b2c4b3925dd7c9d7e8ea1fc5ba8c1e4e82dcbdc85e14583e/jellyfin-mpv-shim-2.0.0.tar.gz",
-            "sha256": "600667352ce00066126f8e5520d4423de5146dbb6e3a9fdb2db22acfff745ba8"
         },
         {
             "type": "file",
@@ -154,11 +144,6 @@
             "type": "file",
             "url": "https://files.pythonhosted.org/packages/ea/b7/e0e3c1c467636186c39925827be42f16fee389dc404ac29e930e9136be70/idna-2.10.tar.gz",
             "sha256": "b307872f855b18632ce0c21c5e45be78c0ea7ae4c15c828c20788b26921eb3f6"
-        },
-        {
-            "type": "file",
-            "url": "https://files.pythonhosted.org/packages/60/7a/e881b5abb54db0e6e671ab088d079c57ce54e8a01a3ca443f561ccadb37e/typing_extensions-3.7.4.3-py3-none-any.whl",
-            "sha256": "7cb407020f00f7bfc3cb3e7881628838e69d8f3fcab2f64742a5e76b2f841918"
         },
         {
             "type": "file",
