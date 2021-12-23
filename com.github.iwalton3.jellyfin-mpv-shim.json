@@ -1,7 +1,7 @@
 {
   "app-id": "com.github.iwalton3.jellyfin-mpv-shim",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "40",
+  "runtime-version": "41",
   "sdk": "org.gnome.Sdk",
   "command": "jellyfin-mpv-shim",
   "finish-args": [
@@ -71,14 +71,14 @@
       "cleanup": [ "/lib/pkgconfig", "/share", "/include" ],
       "sources": [
         {
-          "type": "archive",
-          "url": "https://github.com/mpv-player/mpv/archive/refs/tags/v0.33.1.tar.gz",
-          "sha256": "100a116b9f23bdcda3a596e9f26be3a69f166a4f1d00910d1789b6571c46f3a9"
+          "type": "git",
+          "url": "https://github.com/mpv-player/mpv",
+          "commit": "0e76372e86d92982e17219fda6597f92ca67e7e8"
         },
         {
           "type": "file",
-          "url": "https://waf.io/waf-2.0.9",
-          "sha256": "2a8e0816f023995e557f79ea8940d322bec18f286917c8f9a6fa2dc3875dfa48",
+          "url": "https://waf.io/waf-2.0.23",
+          "sha256": "28a2e4583314a162cfcbffefb8a9202c1d7869040d30b5852da479b76d9c0491",
           "dest-filename": "waf"
         }
       ],
@@ -94,8 +94,8 @@
           "sources": [
             {
               "type": "archive",
-              "url": "https://github.com/FFmpeg/nv-codec-headers/releases/download/n11.0.10.0/nv-codec-headers-11.0.10.0.tar.gz",
-              "sha256": "e5d1fe6b18254a3c8747a38714564030e4fda506961a11a7eafb94f2400419bb"
+              "url": "https://github.com/FFmpeg/nv-codec-headers/releases/download/n11.1.5.0/nv-codec-headers-11.1.5.0.tar.gz",
+              "sha256": "5b3692da3215006ea9fb5585b046605133cd111eb63e376feb5309ccb5ff13dc"
             }
           ]
         },
@@ -113,13 +113,14 @@
             "--disable-devices",
             "--enable-vaapi",
             "--enable-vdpau",
-            "--enable-cuvid"
+            "--enable-cuvid",
+            "--enable-libdav1d"
           ],
           "cleanup": [ "/lib/pkgconfig", "/share", "/include" ],
           "sources": [{
             "type": "archive",
-            "url": "https://ffmpeg.org/releases/ffmpeg-4.4.tar.xz",
-            "sha256": "06b10a183ce5371f915c6bb15b7b1fffbe046e8275099c96affc29e17645d909"
+            "url": "https://ffmpeg.org/releases/ffmpeg-4.4.1.tar.xz",
+            "sha256": "eadbad9e9ab30b25f5520fbfde99fae4a92a1ae3c0257a8d68569a4651e30e02"
           }]
         },
         {
@@ -156,8 +157,8 @@
           "sources": [
             {
               "type": "archive",
-              "url": "https://github.com/libass/libass/releases/download/0.15.0/libass-0.15.0.tar.xz",
-              "sha256": "9f09230c9a0aa68ef7aa6a9e2ab709ca957020f842e52c5b2e52b801a7d9e833"
+              "url": "https://github.com/libass/libass/releases/download/0.15.2/libass-0.15.2.tar.xz",
+              "sha256": "1be2df9c4485a57d78bb18c0a8ed157bc87a5a8dd48c661961c625cb112832fd"
             }
           ]
         },
@@ -192,14 +193,14 @@
       "cleanup": [ "/lib/pkgconfig", "/share", "/include" ],
       "sources": [
         {
-          "type": "archive",
-          "url": "https://github.com/mpv-player/mpv/archive/refs/tags/v0.33.1.tar.gz",
-          "sha256": "100a116b9f23bdcda3a596e9f26be3a69f166a4f1d00910d1789b6571c46f3a9"
+          "type": "git",
+          "url": "https://github.com/mpv-player/mpv",
+          "commit": "0e76372e86d92982e17219fda6597f92ca67e7e8"
         },
         {
           "type": "file",
-          "url": "https://waf.io/waf-2.0.9",
-          "sha256": "2a8e0816f023995e557f79ea8940d322bec18f286917c8f9a6fa2dc3875dfa48",
+          "url": "https://waf.io/waf-2.0.23",
+          "sha256": "28a2e4583314a162cfcbffefb8a9202c1d7869040d30b5852da479b76d9c0491",
           "dest-filename": "waf"
         }
       ],
@@ -215,8 +216,8 @@
           "sources": [
             {
               "type": "archive",
-              "url": "https://github.com/FFmpeg/nv-codec-headers/releases/download/n11.0.10.0/nv-codec-headers-11.0.10.0.tar.gz",
-              "sha256": "e5d1fe6b18254a3c8747a38714564030e4fda506961a11a7eafb94f2400419bb"
+              "url": "https://github.com/FFmpeg/nv-codec-headers/releases/download/n11.1.5.0/nv-codec-headers-11.1.5.0.tar.gz",
+              "sha256": "5b3692da3215006ea9fb5585b046605133cd111eb63e376feb5309ccb5ff13dc"
             }
           ]
         },
@@ -233,13 +234,15 @@
             "--disable-muxers",
             "--disable-devices",
             "--enable-vaapi",
-            "--enable-vdpau"
+            "--enable-vdpau",
+            "--enable-libdav1d"
           ],
           "cleanup": [ "/lib/pkgconfig", "/share", "/include" ],
           "sources": [{
             "type": "archive",
-            "url": "https://ffmpeg.org/releases/ffmpeg-4.4.tar.xz",
-            "sha256": "06b10a183ce5371f915c6bb15b7b1fffbe046e8275099c96affc29e17645d909"              }]
+            "url": "https://ffmpeg.org/releases/ffmpeg-4.4.1.tar.xz",
+            "sha256": "eadbad9e9ab30b25f5520fbfde99fae4a92a1ae3c0257a8d68569a4651e30e02"
+          }]
         },
         {
           "name": "luajit",
@@ -275,8 +278,8 @@
           "sources": [
             {
               "type": "archive",
-              "url": "https://github.com/libass/libass/releases/download/0.15.0/libass-0.15.0.tar.xz",
-              "sha256": "9f09230c9a0aa68ef7aa6a9e2ab709ca957020f842e52c5b2e52b801a7d9e833"
+              "url": "https://github.com/libass/libass/releases/download/0.15.2/libass-0.15.2.tar.xz",
+              "sha256": "1be2df9c4485a57d78bb18c0a8ed157bc87a5a8dd48c661961c625cb112832fd"
             }
           ]
         },
@@ -322,13 +325,14 @@
         },
         {
           "type": "archive",
-          "url": "http://deb.debian.org/debian/pool/main/liba/libappindicator/libappindicator_0.4.92-8.debian.tar.xz",
-          "sha256": "537ddb7af4e94d9f47cceaaf6ad63a35e82e05e3481066529d977c11896a6455"
+          "url": "http://deb.debian.org/debian/pool/main/liba/libappindicator/libappindicator_0.4.92-7.debian.tar.xz",
+          "sha256": "cd551f40d66f65202a4bb1ccd1ff484844d57227aa07e8a5bade82ba734dbe6b"
         },
         {
           "type": "shell",
           "commands": [
-            "for patch in $(cat patches/series); do patch -p1 < patches/$patch; done"
+            "for patch in $(cat patches/series); do patch -p1 < patches/$patch; done",
+            "sed -i 's|-Werror||g' ./*/Makefile.*"
           ]
         }
       ],
