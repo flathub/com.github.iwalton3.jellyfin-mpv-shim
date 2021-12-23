@@ -7,78 +7,88 @@
     "sources": [
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/29/a6/bfd0ed49fcfcb2fdc95314e80f61b67c29c6189f747d2291a5126561e954/pywebview-3.4-py3-none-any.whl",
-            "sha256": "521ef1ba4a009a0f9e316789c8686e0e81cb6700bc31088c178c94f016041c1d"
+            "url": "https://files.pythonhosted.org/packages/92/96/144f70b972a9c0eabbd4391ef93ccd49d0f2747f4f6a2a2738e99e5adc65/requests-2.26.0-py2.py3-none-any.whl",
+            "sha256": "6c1246513ecd5ecd4528a0906f910e8f0f9c6b8ec72030dc9fd154dc1a6efd24"
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/cb/cf/871177f1fc795c6c10787bc0e1f27bb6cf7b81dbde399fd35860472cecbc/urllib3-1.26.4.tar.gz",
-            "sha256": "e7b021f7241115872f92f43c6508082facffbd1c048e3c6e2bb9c2a157e28937"
+            "url": "https://files.pythonhosted.org/packages/71/39/171f1c67cd00715f190ba0b100d606d440a28c93c7714febeca8b79af85e/six-1.16.0.tar.gz",
+            "sha256": "1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926"
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/5e/a0/5f06e1e1d463903cf0c0eebeb751791119ed7a4b3737fdc9a77f1cdfb51f/certifi-2020.12.5-py2.py3-none-any.whl",
-            "sha256": "719a74fb9e33b9bd44cc7f3a8d94bc35e4049deebe19ba7d8e108280cfd59830"
+            "url": "https://files.pythonhosted.org/packages/91/a5/429efc6246119e1e3fbf562c00187d04e83e54619249eb732bb423efa6c6/Jinja2-3.0.3.tar.gz",
+            "sha256": "611bb273cd68f3b993fabdc4064fc858c5b47a973cb5aa7999ec1ba405c87cd7"
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/6b/47/c14abc08432ab22dc18b9892252efaf005ab44066de871e72a38d6af464b/requests-2.25.1.tar.gz",
-            "sha256": "27973dd4a904a4f13b263a19c866c13b92a39ed1c964655f025f3f8d3d75b804"
+            "url": "https://files.pythonhosted.org/packages/b6/fa/72e77d094563208174abbbaa73c32f28c43a31193b843bddf233c7c87644/websocket-client-1.2.3.tar.gz",
+            "sha256": "1315816c0acc508997eb3ae03b9d3ff619c9d12d544c9a9b553704b1cc4f6af5"
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/29/c1/24814557f1d22c56d50280771a17307e6bf87b70727d975fd6b2ce6b014a/requests-2.25.1-py2.py3-none-any.whl",
-            "sha256": "c210084e36a42ae6b9219e00e48287def368a26d03a048ddad7bfee44f75871e"
+            "url": "https://files.pythonhosted.org/packages/47/84/b06f6729fac8108c5fa3e13cde19b0b3de66ba5538c325496dbe39f5ff8e/charset_normalizer-2.0.9-py3-none-any.whl",
+            "sha256": "1eecaa09422db5be9e29d7fc65664e6c33bd06f9ced7838578ba40d58bdf3721"
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/8d/37/21ef553bd14f3503accfb68522d13311c2ae7f683f04fba16c5e5a6c00ed/jellyfin_apiclient_python-1.7.2-py3-none-any.whl",
-            "sha256": "ee1e1cfc5b186176368515633a332b5284a4787381ea89e7578ae6a122a0d7b2"
+            "url": "https://files.pythonhosted.org/packages/d9/5a/e7c31adbe875f2abbb91bd84cf2dc52d792b5a01506781dbcf25c91daf11/six-1.16.0-py2.py3-none-any.whl",
+            "sha256": "8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254"
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/38/ed/87e71c6a17e545bb7af9c2f60f8c2ad7af760c1a0f1937ab866d8082f008/python-xlib-0.29.tar.gz",
-            "sha256": "e4bcb756f4aa05be7b82ee21de0ba04d73414018727b42ebd9fbcf409ea75d13"
+            "url": "https://files.pythonhosted.org/packages/c2/16/950463d36e8b64067c4d535038c5512de8200015e793d7d0a3f400187cbf/python_xlib-0.31-py2.py3-none-any.whl",
+            "sha256": "1ec6ce0de73d9e6592ead666779a5732b384e5b8fb1f1886bd0a81cafa477759"
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/ee/ff/48bde5c0f013094d729fe4b0316ba2a24774b3ff1c52d924a8a4cb04078a/six-1.15.0-py2.py3-none-any.whl",
-            "sha256": "8b74bedcbbbaca38ff6d7491d76f2b06b3592611af620f8426e82dddb04a5ced"
+            "url": "https://files.pythonhosted.org/packages/61/34/9492fb1cfc131968cfeee62d36f464125e7818d196c91046cc19dc9d5c71/pywebview-3.5.tar.gz",
+            "sha256": "a6e4c467c4d1d4522f11dd9c8f7f2b6204e0c24064e1bdf7d5fd3cfff5e54616"
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/c3/ba/fdb4923345cda8fbbb35cb206ade6732afac976d68a4a4fb93ed03e4c8a4/jellyfin_mpv_shim-2.0.1-py3-none-any.whl",
-            "sha256": "b0afd42c8be06eb0611f33073857bf842b75d569b6f58b82c902174903a3c230"
+            "url": "https://files.pythonhosted.org/packages/f2/cf/77d3e19b7fabd03895caca7857ef51e4c409e0ca6b37ee6e9f7daa50b642/proxy_tools-0.1.0.tar.gz",
+            "sha256": "ccb3751f529c047e2d8a58440d86b205303cf0fe8146f784d1cbcd94f0a28010"
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/08/b7/dae7bc3853e6ca3e6f02e48a90cec1e614b78b81683cba1d6407e4d8e181/pypresence-4.2.0-py2.py3-none-any.whl",
-            "sha256": "f477a874c4164193e47f7144d726b0ba2fe69afa2807e3bd944efe4c4c137fac"
+            "url": "https://files.pythonhosted.org/packages/c2/33/3e0cf3cb197806c415a58a9d58f8f93e24a44c4d11542a809152b7215959/pystray-0.19.1.tar.gz",
+            "sha256": "2e88c4d776a34cef124f861656b81cbe556718679ff6bc2935a0a81d046e9b43"
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/19/c7/fa589626997dd07bd87d9269342ccb74b1720384a4d739a1872bd84fbe68/chardet-4.0.0-py2.py3-none-any.whl",
-            "sha256": "f864054d66fd9118f2e67044ac8981a54775ec5b67aed0441892edb553d21da5"
+            "url": "https://files.pythonhosted.org/packages/62/08/e3fc7c8161090f742f504f40b1bccbfc544d4a4e09eb774bf40aafce5436/idna-3.3.tar.gz",
+            "sha256": "9d643ff0a55b762d5cdb124b8eaa99c66322e2157b69160bc32796e824360e6d"
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/7e/c2/1eece8c95ddbc9b1aeb64f5783a9e07a286de42191b7204d67b7496ddf35/Jinja2-2.11.3-py2.py3-none-any.whl",
-            "sha256": "03e47ad063331dd6a3f04a43eddca8a966a26ba0c5b7207a9a9e4e08f1b29419"
+            "url": "https://files.pythonhosted.org/packages/e7/01/3569e0b535fb2e4a6c384bdbed00c55b9d78b5084e0fb7f4d0bf523d7670/requests-2.26.0.tar.gz",
+            "sha256": "b8aa58f8cf793ffd8782d3d8cb19e66ef36f7aba4353eec859e74678b01b07a7"
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/cf/42/5523ca72b16a53d0c1c7f163936907c852093a73d8d1d1e4adc9e0c52edd/jellyfin-mpv-shim-2.0.1.tar.gz",
-            "sha256": "3570cba90cc251f0cfa0a34fae6227e4531e74c298c6d0e191ac11136960fef2"
+            "url": "https://files.pythonhosted.org/packages/7d/2a/2fc11b54e2742db06297f7fa7f420a0e3069fdcf0e4b57dfec33f0b08622/Pillow-8.4.0.tar.gz",
+            "sha256": "b8e2f83c56e141920c39464b852de3719dfbfb6e3c99a2d8da0edf4fb33176ed"
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/ee/2d/9cdc2b527e127b4c9db64b86647d567985940ac3698eeabc7ffaccb4ea61/chardet-4.0.0.tar.gz",
-            "sha256": "0d6f53a15db4120f2b08c94f11e7d93d2c911ee118b6b30a04ec3ee8310179fa"
+            "url": "https://files.pythonhosted.org/packages/bf/10/ff66fea6d1788c458663a84d88787bae15d45daa16f6b3ef33322a51fc7e/MarkupSafe-2.0.1.tar.gz",
+            "sha256": "594c67807fb16238b30c44bdf74f36c02cdf22d1c8cda91ef8a0ed8dabf5620a"
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/8c/98/f2b4f38e23f74b5b57ba2576ce9a16c47a2627f8e92a407d4d37567032c8/pywebview-3.4.tar.gz",
-            "sha256": "bb92c556e8ac7ccaaf9e24d86c437a73240850438490833d8b3ee3e60c50e040"
+            "url": "https://files.pythonhosted.org/packages/04/a2/d918dcd22354d8958fe113e1a3630137e0fc8b44859ade3063982eacd2a4/idna-3.3-py3-none-any.whl",
+            "sha256": "84d9dd047ffa80596e0f246e2eab0b391788b0503584e8945f2368256d2735ff"
+        },
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/00/a4/1aff45e2b16f85ecec20d38e7684891651307e99c386a6563e33527992b5/jellyfin_mpv_shim-2.0.2-py3-none-any.whl",
+            "sha256": "61093c57b7de5361502cab981c21a35410843e374e18c648d518517f59d80993"
+        },
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/6c/ae/d26450834f0acc9e3d1f74508da6df1551ceab6c2ce0766a593362d6d57f/certifi-2021.10.8.tar.gz",
+            "sha256": "78884e7c1d4b00ce3cea67b44566851c4343c120abd683433ce934a68ea58872"
         },
         {
             "type": "file",
@@ -87,38 +97,33 @@
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/09/c6/d3e3abe5b4f4f16cf0dfc9240ab7ce10c2baa0e268989a4e3ec19e90c84e/urllib3-1.26.4-py2.py3-none-any.whl",
-            "sha256": "2f4da4594db7e1e110a944bb1b551fdf4e6c136ad42e4234131391e21eb5b0df"
+            "url": "https://files.pythonhosted.org/packages/88/03/cd5aa2c97356b7eee484a2b63fe850076ecb82fdeda82979a234b62a9a37/websocket_client-1.2.3-py3-none-any.whl",
+            "sha256": "2eed4cc58e4d65613ed6114af2f380f7910ff416fc8c46947f6e76b6815f56c0"
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/aa/b1/3d678b2426a3485ceb3ab1ec1e079da79ecb1b5e8845470ef089999cf688/python_xlib-0.29-py2.py3-none-any.whl",
-            "sha256": "044095d1b1a5eab5a79f8d0b66f811a9ac6acd038dd3bae00cb3dbe90b32a7e3"
+            "url": "https://files.pythonhosted.org/packages/37/45/946c02767aabb873146011e665728b680884cd8fe70dde973c640e45b775/certifi-2021.10.8-py2.py3-none-any.whl",
+            "sha256": "d62a0163eb4c2344ac042ab2bdf75399a71a2d8c7d47eac2e2ee91b9d6339569"
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/14/ea/ac45b311801401c3e12e16daee38965d830add8478d876d072dbabf11e37/pystray-0.17.3-py2.py3-none-any.whl",
-            "sha256": "549a24c389131af2f0c1adb4f4b3196eb2666d07d68b7139e60043723b34994e"
+            "url": "https://files.pythonhosted.org/packages/81/27/a4e9dc73c9a8b134074fbb8c3a058dc93f9b31117f91a832c37210c95656/pystray-0.19.1-py2.py3-none-any.whl",
+            "sha256": "08a88c46bc6a70e1c859cb808922dc94c5e19b46578c144c5cef02d87e30490f"
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/b9/2e/64db92e53b86efccfaea71321f597fa2e1b2bd3853d8ce658568f7a13094/MarkupSafe-1.1.1.tar.gz",
-            "sha256": "29872e92839765e546828bb7754a68c418d927cd064fd4708fab9fe9c8bb116b"
+            "url": "https://files.pythonhosted.org/packages/af/f4/524415c0744552cce7d8bf3669af78e8a069514405ea4fcbd0cc44733744/urllib3-1.26.7-py2.py3-none-any.whl",
+            "sha256": "c4fdf4019605b6e5423637e01bc9fe4daef873709a7973e195ceba0a62bbc844"
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/08/33/80e0d4f60e84a1ddd9a03f340be1065a2a363c47ce65c4bd3bae65ce9631/websocket_client-0.58.0-py2.py3-none-any.whl",
-            "sha256": "44b5df8f08c74c3d82d28100fdc81f4536809ce98a17f0757557813275fbb663"
+            "url": "https://files.pythonhosted.org/packages/64/54/b177d222e9e969e9a9928a8612569a332586c646d3f30dff360fafd4ac20/jellyfin_apiclient_python-1.8.1-py3-none-any.whl",
+            "sha256": "ebfa9d3dae06a49e57863a5e54fcd5ef9c469af579874f9fd7e297901d756395"
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/38/03/9d1edf80c5af8b8babd5a55f4874f23928e36a3c7ce4c598a0ce6f5291b3/pystray-0.17.3.tar.gz",
-            "sha256": "aa44edeaf68b0019f37cb6a6f340bba6640095e8295d3381742d3e2d0a11ca01"
-        },
-        {
-            "type": "file",
-            "url": "https://files.pythonhosted.org/packages/6b/34/415834bfdafca3c5f451532e8a8d9ba89a21c9743a0c59fbd0205c7f9426/six-1.15.0.tar.gz",
-            "sha256": "30639c035cdb23534cd4aa2dd52c3bf48f06e5f4a941509c8bafd8ce11080259"
+            "url": "https://files.pythonhosted.org/packages/58/df/be2dbd7ed2262791536278295d3c4e56d5c17d4291666f35fd6190a7f2ab/pypresence-4.2.1.tar.gz",
+            "sha256": "691daf98c8189fd216d988ebfc67779e0f664211512d9843f37ab0d51d4de066"
         },
         {
             "type": "file",
@@ -127,48 +132,43 @@
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/a2/38/928ddce2273eaa564f6f50de919327bf3a00f091b5baba8dfa9460f3a8a8/idna-2.10-py2.py3-none-any.whl",
-            "sha256": "b97d804b1e9b523befed77c48dacec60e6dcb0b5391d57af6a65a312a90648c0"
+            "url": "https://files.pythonhosted.org/packages/07/9e/e9bd312b33280878788a6c90254cc9fec5dd05c9d6bfd58e7f2d7185f6cd/jellyfin-mpv-shim-2.0.2.tar.gz",
+            "sha256": "c8514cb066f33002b25e90ffbd97a5b3062e95361ee56c9b8c6e690f64692eb9"
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/21/23/af6bac2a601be6670064a817273d4190b79df6f74d8012926a39bc7aa77f/Pillow-8.2.0.tar.gz",
-            "sha256": "a787ab10d7bb5494e5f76536ac460741788f1fbce851068d73a87ca7c35fc3e1"
+            "url": "https://files.pythonhosted.org/packages/20/9a/e5d9ec41927401e41aea8af6d16e78b5e612bca4699d417f646a9610a076/Jinja2-3.0.3-py3-none-any.whl",
+            "sha256": "077ce6014f7b40d03b47d1f1ca4b0fc8328a692bd284016f806ed0eaca390ad8"
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/4a/df/112c278ba1ead96786d24d973429ce1e1a2c86b9843183d9f8ef8c6330d7/websocket_client-0.58.0.tar.gz",
-            "sha256": "63509b41d158ae5b7f67eb4ad20fecbb4eee99434e73e140354dc3ff8e09716f"
+            "url": "https://files.pythonhosted.org/packages/c4/bf/8f56ebae9775a922774293f05235323b0c359dda5f07d6e81b726d6269b2/pypresence-4.2.1-py2.py3-none-any.whl",
+            "sha256": "12197b5f51c21e3e555b17f85d3e55023f4ad83b6fff72cd6387659ffd484a02"
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/ea/b7/e0e3c1c467636186c39925827be42f16fee389dc404ac29e930e9136be70/idna-2.10.tar.gz",
-            "sha256": "b307872f855b18632ce0c21c5e45be78c0ea7ae4c15c828c20788b26921eb3f6"
+            "url": "https://files.pythonhosted.org/packages/40/9c/107e22f637d33434404c07d69112b9d26b76ee0dd4dd705131ab6cdcc818/python-xlib-0.31.tar.gz",
+            "sha256": "74d83a081f532bc07f6d7afcd6416ec38403d68f68b9b9dc9e1f28fbf2d799e9"
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/89/2f/52a8a9563c0b11448bd63dd0eb0f99c4101a12169c0cc0582a56be450253/jellyfin-apiclient-python-1.7.2.tar.gz",
-            "sha256": "9d22d46bdfe3013e97ac7a3bee45791d80713cefe585c58aa8f7e9112eee97d0"
+            "url": "https://files.pythonhosted.org/packages/8d/13/ee27a5a113ce09fbcc4dffb1eef793e84693d60c52c1dcb0cf678854062e/jellyfin-apiclient-python-1.8.1.tar.gz",
+            "sha256": "b765e667baecad9abde37973443aeacec63f76314d8c56e4118787780d805622"
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/e2/d1/8d0fb2f2ceda70e3a5cb199ca019cb592c957976e1944c62d43335e1f29c/pypresence-4.2.0.tar.gz",
-            "sha256": "54618a18085d104aa063df8296dac95cf01b922ed8aab4b021f71718bb3f19b1"
-        },
-        {
-            "type": "file",
-            "url": "https://files.pythonhosted.org/packages/4f/e7/65300e6b32e69768ded990494809106f87da1d436418d5f1367ed3966fd7/Jinja2-2.11.3.tar.gz",
-            "sha256": "a6d58433de0ae800347cab1fa3043cebbabe8baa9d29e668f1c768cb87a333c6"
-        },
-        {
-            "type": "file",
-            "url": "https://files.pythonhosted.org/packages/06/a9/cd1fd8ee13f73a4d4f491ee219deeeae20afefa914dfb4c130cfc9dc397a/certifi-2020.12.5.tar.gz",
-            "sha256": "1a4995114262bffbc2413b159f2a1a480c969de6e6eb13ee966d470af86af59c"
+            "url": "https://files.pythonhosted.org/packages/80/be/3ee43b6c5757cabea19e75b8f46eaf05a2f5144107d7db48c7cf3a864f73/urllib3-1.26.7.tar.gz",
+            "sha256": "4987c65554f7a2dbf30c18fd48778ef124af6fab771a377103da0585e2336ece"
         },
         {
             "type": "file",
             "url": "https://files.pythonhosted.org/packages/3b/84/c1f54d3527a7f454e22b5165a4c7cacd5ea81a6aa36b4506fabe667062fe/python-mpv-0.5.2.tar.gz",
             "sha256": "10c7ae61eff441602c7188595108391cdede153c15454772d8811c2bcb9e6823"
+        },
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/68/e4/e014e7360fc6d1ccc507fe0b563b4646d00e0d4f9beec4975026dd15850b/charset-normalizer-2.0.9.tar.gz",
+            "sha256": "b0b883e8e874edfdece9c28f314e3dd5badf067342e42fb162203335ae61aa2c"
         }
     ]
 }
