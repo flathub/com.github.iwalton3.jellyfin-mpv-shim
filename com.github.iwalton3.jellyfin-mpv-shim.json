@@ -1,7 +1,7 @@
 {
   "app-id": "com.github.iwalton3.jellyfin-mpv-shim",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "41",
+  "runtime-version": "42",
   "sdk": "org.gnome.Sdk",
   "command": "jellyfin-mpv-shim",
   "finish-args": [
@@ -71,14 +71,14 @@
       "cleanup": [ "/lib/pkgconfig", "/share", "/include" ],
       "sources": [
         {
-          "type": "git",
-          "url": "https://github.com/mpv-player/mpv",
-          "commit": "0e76372e86d92982e17219fda6597f92ca67e7e8"
+          "type": "archive",
+          "url": "https://github.com/mpv-player/mpv/archive/v0.34.1.tar.gz",
+          "sha256": "32ded8c13b6398310fa27767378193dc1db6d78b006b70dbcbd3123a1445e746"
         },
         {
           "type": "file",
-          "url": "https://waf.io/waf-2.0.23",
-          "sha256": "28a2e4583314a162cfcbffefb8a9202c1d7869040d30b5852da479b76d9c0491",
+          "url": "https://waf.io/waf-2.0.24",
+          "sha256": "93909bca823a675f9f40af7c65b24887c3a3c0efdf411ff1978ba827194bdeb0",
           "dest-filename": "waf"
         }
       ],
@@ -94,8 +94,8 @@
           "sources": [
             {
               "type": "archive",
-              "url": "https://github.com/FFmpeg/nv-codec-headers/releases/download/n11.1.5.0/nv-codec-headers-11.1.5.0.tar.gz",
-              "sha256": "5b3692da3215006ea9fb5585b046605133cd111eb63e376feb5309ccb5ff13dc"
+              "url": "https://github.com/FFmpeg/nv-codec-headers/releases/download/n11.1.5.1/nv-codec-headers-11.1.5.1.tar.gz",
+              "sha256": "a28cdde3ac0e9e02c2dde7a1b4de5333b4ac6148a8332ca712da243a3361a0d9"
             }
           ]
         },
@@ -119,8 +119,8 @@
           "cleanup": [ "/lib/pkgconfig", "/share", "/include" ],
           "sources": [{
             "type": "archive",
-            "url": "https://ffmpeg.org/releases/ffmpeg-4.4.1.tar.xz",
-            "sha256": "eadbad9e9ab30b25f5520fbfde99fae4a92a1ae3c0257a8d68569a4651e30e02"
+            "url": "https://ffmpeg.org/releases/ffmpeg-5.0.1.tar.xz",
+            "sha256": "ef2efae259ce80a240de48ec85ecb062cecca26e4352ffb3fda562c21a93007b"
           }]
         },
         {
@@ -157,8 +157,8 @@
           "sources": [
             {
               "type": "archive",
-              "url": "https://github.com/libass/libass/releases/download/0.15.2/libass-0.15.2.tar.xz",
-              "sha256": "1be2df9c4485a57d78bb18c0a8ed157bc87a5a8dd48c661961c625cb112832fd"
+              "url": "https://github.com/libass/libass/releases/download/0.16.0/libass-0.16.0.tar.xz",
+              "sha256": "5dbde9e22339119cf8eed59eea6c623a0746ef5a90b689e68a090109078e3c08"
             }
           ]
         },
@@ -206,22 +206,6 @@
       ],
       "modules": [
         {
-          "name": "ffnvcodec",
-          "buildsystem": "simple",
-          "build-commands": [
-              "make install PREFIX=/app"
-          ],
-          "only-arches": ["i386", "x86_64"],
-          "cleanup": [ "/lib/pkgconfig", "/include" ],
-          "sources": [
-            {
-              "type": "archive",
-              "url": "https://github.com/FFmpeg/nv-codec-headers/releases/download/n11.1.5.0/nv-codec-headers-11.1.5.0.tar.gz",
-              "sha256": "5b3692da3215006ea9fb5585b046605133cd111eb63e376feb5309ccb5ff13dc"
-            }
-          ]
-        },
-        {
           "name": "ffmpeg",
           "config-opts": [
             "--enable-shared",
@@ -240,8 +224,8 @@
           "cleanup": [ "/lib/pkgconfig", "/share", "/include" ],
           "sources": [{
             "type": "archive",
-            "url": "https://ffmpeg.org/releases/ffmpeg-4.4.1.tar.xz",
-            "sha256": "eadbad9e9ab30b25f5520fbfde99fae4a92a1ae3c0257a8d68569a4651e30e02"
+            "url": "https://ffmpeg.org/releases/ffmpeg-5.0.1.tar.xz",
+            "sha256": "ef2efae259ce80a240de48ec85ecb062cecca26e4352ffb3fda562c21a93007b"
           }]
         },
         {
@@ -278,8 +262,8 @@
           "sources": [
             {
               "type": "archive",
-              "url": "https://github.com/libass/libass/releases/download/0.15.2/libass-0.15.2.tar.xz",
-              "sha256": "1be2df9c4485a57d78bb18c0a8ed157bc87a5a8dd48c661961c625cb112832fd"
+              "url": "https://github.com/libass/libass/releases/download/0.16.0/libass-0.16.0.tar.xz",
+              "sha256": "5dbde9e22339119cf8eed59eea6c623a0746ef5a90b689e68a090109078e3c08"
             }
           ]
         },
