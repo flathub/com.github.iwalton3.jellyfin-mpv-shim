@@ -12,6 +12,11 @@
         },
         {
             "type": "file",
+            "url": "https://files.pythonhosted.org/packages/67/f4/c4dd8904bd761f79e98c101e513a4b2ece380fd93f6d58693b6385a2d4e0/jellyfin_mpv_shim-2.2.0-py3-none-any.whl",
+            "sha256": "ecd4d7a7dcd223e7aecae624289cbbc8af7f75dd89a8e0761ff6b723f9fb410f"
+        },
+        {
+            "type": "file",
             "url": "https://files.pythonhosted.org/packages/71/39/171f1c67cd00715f190ba0b100d606d440a28c93c7714febeca8b79af85e/six-1.16.0.tar.gz",
             "sha256": "1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926"
         },
@@ -19,6 +24,11 @@
             "type": "file",
             "url": "https://files.pythonhosted.org/packages/86/4a/9d514f21acc672debb7e835ca7409d4d565bc9ee90f5be83efa9ce6c6c94/pystray-0.19.3.tar.gz",
             "sha256": "71d5615c5e773cbe5b58e8ada0a192ae9f088a3765f65bc4159ef0a5679e0dc1"
+        },
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/95/67/daf2725a05cd26e83d356577392ee269809ce9afdc1399ce463596cd5636/jellyfin-mpv-shim-2.2.0.tar.gz",
+            "sha256": "262482e968eb2ec5a4dff9bf107abb28d5da27aaea4f67c6f534f58cfbd894ad"
         },
         {
             "type": "file",
@@ -39,11 +49,6 @@
             "type": "file",
             "url": "https://files.pythonhosted.org/packages/d9/5a/e7c31adbe875f2abbb91bd84cf2dc52d792b5a01506781dbcf25c91daf11/six-1.16.0-py2.py3-none-any.whl",
             "sha256": "8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254"
-        },
-        {
-            "type": "file",
-            "url": "https://files.pythonhosted.org/packages/11/dd/e015f3780f42dd9af62cf0107b44ea1298926627ecd70c17b0e484e95bcd/certifi-2022.5.18.1-py3-none-any.whl",
-            "sha256": "f1d53542ee8cbedbe2118b5686372fb33c297fcd6379b050cca0ef13a597382a"
         },
         {
             "type": "file",
@@ -97,8 +102,8 @@
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/14/17/e75aba92099a79ad310a61788f21ebdd5ddca73c0b30afedea078804423c/jellyfin_mpv_shim-2.1.0-py3-none-any.whl",
-            "sha256": "68d9727181f9d0a0d371e875f190b5e5428f90982f9032485a8b5ac9135fc31b"
+            "url": "https://files.pythonhosted.org/packages/e9/06/d3d367b7af6305b16f0d28ae2aaeb86154fa91f144f036c2d5002a5a202b/certifi-2022.6.15-py3-none-any.whl",
+            "sha256": "fe86415d55e84719d75f8b69414f6438ac3547d2078ab91b67e779ef69378412"
         },
         {
             "type": "file",
@@ -114,6 +119,11 @@
             "type": "file",
             "url": "https://files.pythonhosted.org/packages/56/31/7bcaf657fafb3c6db8c787a865434290b726653c912085fbd371e9b92e1c/charset-normalizer-2.0.12.tar.gz",
             "sha256": "2857e29ff0d34db842cd7ca3230549d1a697f96ee6d3fb071cfa6c7393832597"
+        },
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/cc/85/319a8a684e8ac6d87a1193090e06b6bbb302717496380e225ee10487c888/certifi-2022.6.15.tar.gz",
+            "sha256": "84c85a9078b11105f04f3036a9482ae10e4621616db313fe045dd24743a0820d"
         },
         {
             "type": "file",
@@ -134,11 +144,6 @@
             "type": "file",
             "url": "https://files.pythonhosted.org/packages/58/df/be2dbd7ed2262791536278295d3c4e56d5c17d4291666f35fd6190a7f2ab/pypresence-4.2.1.tar.gz",
             "sha256": "691daf98c8189fd216d988ebfc67779e0f664211512d9843f37ab0d51d4de066"
-        },
-        {
-            "type": "file",
-            "url": "https://files.pythonhosted.org/packages/07/10/75277f313d13a2b74fc56e29239d5c840c2bf09f17bf25c02b35558812c6/certifi-2022.5.18.1.tar.gz",
-            "sha256": "9c5705e395cd70084351dd8ad5c41e65655e08ce46f2ec9cf6c2c08390f71eb7"
         },
         {
             "type": "file",
@@ -164,11 +169,6 @@
             "type": "file",
             "url": "https://files.pythonhosted.org/packages/40/9c/107e22f637d33434404c07d69112b9d26b76ee0dd4dd705131ab6cdcc818/python-xlib-0.31.tar.gz",
             "sha256": "74d83a081f532bc07f6d7afcd6416ec38403d68f68b9b9dc9e1f28fbf2d799e9"
-        },
-        {
-            "type": "file",
-            "url": "https://files.pythonhosted.org/packages/6b/cc/bd26c7821ea8dd80432a7444a58ff2b85623e158b12cb9a137ae4a549ed0/jellyfin-mpv-shim-2.1.0.tar.gz",
-            "sha256": "361d9b4a6cf122766066699e96c5e287a9516abb432a36c2d3f081d606222dc4"
         },
         {
             "type": "file",
