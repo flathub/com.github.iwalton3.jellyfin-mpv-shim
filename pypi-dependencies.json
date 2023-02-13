@@ -92,11 +92,6 @@
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/0f/57/a8543b433d9b2dc3bf07e6d480f122567583be91ab7ff3cbe221f5f93aeb/jellyfin_mpv_shim-2.3.0-py3-none-any.whl",
-            "sha256": "c79301da7cc5d0424d3f987eaefb1ab835f81391e4f5b0d423c8a3f8cb767100"
-        },
-        {
-            "type": "file",
             "url": "https://files.pythonhosted.org/packages/bc/07/830784e061fb94d67649f3e438ff63cfb902dec6d48ac75aeaaac7c7c30e/Pillow-9.4.0.tar.gz",
             "sha256": "a1c2d7780448eb93fbcc3789bf3916aa5720d942e37945f4056680317f1cd23e"
         },
@@ -177,8 +172,13 @@
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/ab/8d/d5a5f2834d4c71572fb280592d367236c85aecc1aa7cea8c357549508215/jellyfin-mpv-shim-2.3.0.tar.gz",
-            "sha256": "0adf64b93716e6babbc5bfc5a5911573d0a48ecea2917e130607e3a4d8d886f8"
+            "url": "https://files.pythonhosted.org/packages/5b/3c/46035ed7354b01f111d98364d33a0397561dfa57d86cf26bb8c83d28ef21/jellyfin_mpv_shim-2.3.1-py3-none-any.whl",
+            "sha256": "d558053648854920cd357604445796cfeace3a223d0580ee076c9688bcec071d"
+        },
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/0c/38/00a2bde7080e4404946162212bd817089d406337eee2f7c63d2c156eb75a/jellyfin-mpv-shim-2.3.1.tar.gz",
+            "sha256": "bf97a768d719d1aa3211c3857e402c388c04a55676a2a6063242e50dea4163b7"
         }
     ]
 }
