@@ -12,13 +12,13 @@
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/71/39/171f1c67cd00715f190ba0b100d606d440a28c93c7714febeca8b79af85e/six-1.16.0.tar.gz",
-            "sha256": "1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926"
+            "url": "https://files.pythonhosted.org/packages/2a/bb/102e3349256a5e0f54d153862f8ee9ed1aff4f4360bc3fbc307242d00b84/jellyfin-mpv-shim-2.4.2.tar.gz",
+            "sha256": "873eae233955ba87126510d82e7277fce6785033656af245932e02bb282000d2"
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/67/7e/3033899bc3067a8506bc79267b343ab41e539902cb9a482785018e1b82f1/jellyfin_mpv_shim-2.4.1-py3-none-any.whl",
-            "sha256": "5e117fdf7c6d24d6ffa7a9aab96aa28b6f7c68af9a8bb52ef170be5168278570"
+            "url": "https://files.pythonhosted.org/packages/71/39/171f1c67cd00715f190ba0b100d606d440a28c93c7714febeca8b79af85e/six-1.16.0.tar.gz",
+            "sha256": "1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926"
         },
         {
             "type": "file",
@@ -127,11 +127,6 @@
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/06/f7/da027d299d13e78fe675839a93e87b729139a38c54148927f6d11428d79a/jellyfin-mpv-shim-2.4.1.tar.gz",
-            "sha256": "607cd0722b4cad5ba935625d665ca8aaa052c84d2d8553bae407803ec489f2c1"
-        },
-        {
-            "type": "file",
             "url": "https://files.pythonhosted.org/packages/fc/34/3030de6f1370931b9dbb4dad48f6ab1015ab1d32447850b9fc94e60097be/idna-3.4-py3-none-any.whl",
             "sha256": "90b77e79eaa3eba6de819a0c442c0b4ceefc341a7a2ab77d7562bf49f425c5c2"
         },
@@ -169,6 +164,11 @@
             "type": "file",
             "url": "https://files.pythonhosted.org/packages/d3/49/4fff598d0e2d36c099613d5f7bd83e66530c3b24730afcea283f1d675db3/jellyfin_apiclient_python-1.9.2-py3-none-any.whl",
             "sha256": "6a668ccee7b237d3029c66dc91c08e00e3ff1a2c363c0fc0ef177c1fa6f0cbe8"
+        },
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/56/0f/ce057e088df73632977cf7a61160d05fa36bb518241a3d2e53c737f7b79f/jellyfin_mpv_shim-2.4.2-py3-none-any.whl",
+            "sha256": "68ed7534025de3009cbf09e1bd662928aab68f9438e6923d6d9544cf1b532098"
         },
         {
             "type": "file",
