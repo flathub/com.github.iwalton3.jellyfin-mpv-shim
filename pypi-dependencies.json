@@ -132,6 +132,11 @@
         },
         {
             "type": "file",
+            "url": "https://files.pythonhosted.org/packages/a0/26/c2eb4b5abbb03971c51883fa7f9acfc35757ac5564aad9373114366d31cc/jellyfin_mpv_shim-2.4.0-py3-none-any.whl",
+            "sha256": "2a5d7fee999e8cddd292120cdc37849d8a1243b4778138d500aba19df2690815"
+        },
+        {
+            "type": "file",
             "url": "https://files.pythonhosted.org/packages/c4/bf/8f56ebae9775a922774293f05235323b0c359dda5f07d6e81b726d6269b2/pypresence-4.2.1-py2.py3-none-any.whl",
             "sha256": "12197b5f51c21e3e555b17f85d3e55023f4ad83b6fff72cd6387659ffd484a02"
         },
@@ -144,6 +149,11 @@
             "type": "file",
             "url": "https://files.pythonhosted.org/packages/c5/52/fe421fb7364aa738b3506a2d99e4f3a56e079c0a798e9f4fa5e14c60922f/urllib3-1.26.14.tar.gz",
             "sha256": "076907bf8fd355cde77728471316625a4d2f7e713c125f51953bb5b3eecf4f72"
+        },
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/c2/9e/328a7080e0cf34082556b032caeeee95dbaf26152f442d36c5d3b323ecc7/jellyfin-mpv-shim-2.4.0.tar.gz",
+            "sha256": "ea37b6a491e3457bf49be3014bfc02c3c2a3056ab2d8a19cc91d92c608ecf12a"
         },
         {
             "type": "file",
@@ -169,16 +179,6 @@
             "type": "file",
             "url": "https://files.pythonhosted.org/packages/63/96/2713bb6e0ca10ee2b7be568d6e6d112cf0a1b604e14879fe744f48ebbed6/bottle-0.12.23-py3-none-any.whl",
             "sha256": "9f1c363257c590bd34db5fad4693a7f06ff4217e9ad18337451de69c25137127"
-        },
-        {
-            "type": "file",
-            "url": "https://files.pythonhosted.org/packages/5b/3c/46035ed7354b01f111d98364d33a0397561dfa57d86cf26bb8c83d28ef21/jellyfin_mpv_shim-2.3.1-py3-none-any.whl",
-            "sha256": "d558053648854920cd357604445796cfeace3a223d0580ee076c9688bcec071d"
-        },
-        {
-            "type": "file",
-            "url": "https://files.pythonhosted.org/packages/0c/38/00a2bde7080e4404946162212bd817089d406337eee2f7c63d2c156eb75a/jellyfin-mpv-shim-2.3.1.tar.gz",
-            "sha256": "bf97a768d719d1aa3211c3857e402c388c04a55676a2a6063242e50dea4163b7"
         }
     ]
 }
