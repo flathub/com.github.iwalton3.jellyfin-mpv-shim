@@ -17,11 +17,6 @@
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/34/d4/3504f3a873a8f0f32a112cc2e7528a12b617de566dc83bcb57f0b9d1f617/python-mpv-1.0.1.tar.gz",
-            "sha256": "4c5cc55df484232827ebfa9e498e8370698c6bf7283ba6b1e0329cc42f3aeb8e"
-        },
-        {
-            "type": "file",
             "url": "https://files.pythonhosted.org/packages/6f/65/232563752a049831fdd6ae7b4caf8a557529d2f3c72ecbc40fb8b69e372c/python-mpv-jsonipc-1.2.0.tar.gz",
             "sha256": "2199beefa6643d16483dda17c976bf2bbbf5dfedb1a5ca8d7d4611527ae6ad7a"
         },
@@ -42,13 +37,13 @@
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/96/d7/1675d9089a1f4677df5eb29c3f8b064aa1e70c1251a0a8a127803158942d/charset-normalizer-3.0.1.tar.gz",
-            "sha256": "ebea339af930f8ca5d7a699b921106c6e29c617fe9606fa7baa043c1cdae326f"
+            "url": "https://files.pythonhosted.org/packages/bc/c3/f068337a370801f372f2f8f6bad74a5c140f6fda3d9de154052708dd3c65/Jinja2-3.1.2-py3-none-any.whl",
+            "sha256": "6088930bfe239f0e6710546ab9c19c9ef35e29792895fed6e6e31a023a182a61"
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/bc/c3/f068337a370801f372f2f8f6bad74a5c140f6fda3d9de154052708dd3c65/Jinja2-3.1.2-py3-none-any.whl",
-            "sha256": "6088930bfe239f0e6710546ab9c19c9ef35e29792895fed6e6e31a023a182a61"
+            "url": "https://files.pythonhosted.org/packages/42/1b/99b960fa93d0f2d00716933e9ffcedb91aaac5a0f651ee543d4f011cfc06/jellyfin_mpv_shim-2.6.0-py3-none-any.whl",
+            "sha256": "54e7021f9afa4376ccd0b9db1d993516411341ed7d13c2fb3242b251baf523be"
         },
         {
             "type": "file",
@@ -77,16 +72,6 @@
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/5a/02/f8c58913b8559bbaa07407ba5b5b95e792cf553630d42d0c618bbf595f13/bottle-0.12.24.tar.gz",
-            "sha256": "2480121a73e87380989b77e32bd2092d190e7ea7d71e6f1b8f7af7eab9d54ea3"
-        },
-        {
-            "type": "file",
-            "url": "https://files.pythonhosted.org/packages/94/97/2002952e9d15f1cdd7bf71d3c43ff5f1e208f2079f4f57efa4a5738a5419/jellyfin-mpv-shim-2.5.0.tar.gz",
-            "sha256": "07da2b8d0a2388bc02f742d9e329d8ee78b0e9f84921a527fc351701854c8df8"
-        },
-        {
-            "type": "file",
             "url": "https://files.pythonhosted.org/packages/fc/b8/ff33610932e0ee81ae7f1269c890f697d56ff74b9f5b2ee5d9b7fa2c5355/python_xlib-0.33-py2.py3-none-any.whl",
             "sha256": "c3534038d42e0df2f1392a1b30a15a4ff5fdc2b86cfa94f072bf11b10a164398"
         },
@@ -102,8 +87,23 @@
         },
         {
             "type": "file",
+            "url": "https://files.pythonhosted.org/packages/bb/1f/5977ea88c6a3df6199db97d320e5da816d415d1eb75a987a1f6823d5cc9d/bottle-0.12.25-py3-none-any.whl",
+            "sha256": "d6f15f9d422670b7c073d63bd8d287b135388da187a0f3e3c19293626ce034ea"
+        },
+        {
+            "type": "file",
             "url": "https://files.pythonhosted.org/packages/bc/07/830784e061fb94d67649f3e438ff63cfb902dec6d48ac75aeaaac7c7c30e/Pillow-9.4.0.tar.gz",
             "sha256": "a1c2d7780448eb93fbcc3789bf3916aa5720d942e37945f4056680317f1cd23e"
+        },
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/ff/d7/8d757f8bd45be079d76309248845a04f09619a7b17d6dfc8c9ff6433cac2/charset-normalizer-3.1.0.tar.gz",
+            "sha256": "34e0a2f9c370eb95597aae63bf85eb5e96826d81e3dcf88b8886012906f509b5"
+        },
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/42/c3/c692825f7b1460164e85a9f0e5b7b2ceea48a1b89e270d369a786eceb0a2/python_mpv-1.0.3-py3-none-any.whl",
+            "sha256": "d0a0e9266f560a9de0bd60add93ba83577c58e3d904f2b1a7e71a16b9249a83a"
         },
         {
             "type": "file",
@@ -124,6 +124,11 @@
             "type": "file",
             "url": "https://files.pythonhosted.org/packages/58/df/be2dbd7ed2262791536278295d3c4e56d5c17d4291666f35fd6190a7f2ab/pypresence-4.2.1.tar.gz",
             "sha256": "691daf98c8189fd216d988ebfc67779e0f664211512d9843f37ab0d51d4de066"
+        },
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/fd/04/1c09ab851a52fe6bc063fd0df758504edede5cc741bd2e807bf434a09215/bottle-0.12.25.tar.gz",
+            "sha256": "e1a9c94970ae6d710b3fb4526294dfeb86f2cb4a81eff3a4b98dc40fb0e5e021"
         },
         {
             "type": "file",
@@ -167,18 +172,18 @@
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/ef/74/39f45da835b8654cfa66ccf6a65cea38d99f940db0a5e0d985de4723a1c9/bottle-0.12.24-py3-none-any.whl",
-            "sha256": "fa88c66413ab07b5046545ac6e47a967d582143aef87f2c0fb0ef571d9977b5e"
-        },
-        {
-            "type": "file",
             "url": "https://files.pythonhosted.org/packages/71/4c/3db2b8021bd6f2f0ceb0e088d6b2d49147671f25832fb17970e9b583d742/certifi-2022.12.7-py3-none-any.whl",
             "sha256": "4ad3232f5e926d6718ec31cfc1fcadfde020920e278684144551c91769c7bc18"
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/85/a5/427b8677b2d86ad80d5a5f41f4ac5394630b6bfc654e474b3d33d82217ff/jellyfin_mpv_shim-2.5.0-py3-none-any.whl",
-            "sha256": "ffb3ddf1f9264f4d9113a2b5c373b01eccee4ae3ae1c6802689ed9ea845b73e5"
+            "url": "https://files.pythonhosted.org/packages/e7/bf/e59af46495947728548cf82aafcc283c7e9f7df4e47f1bdbb8cb890abfde/jellyfin-mpv-shim-2.6.0.tar.gz",
+            "sha256": "f74676be0613ffd84141981f5de63b97ab06c13e4a118f17e2b64c82b6d3c2b3"
+        },
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/8d/48/7085be4dcde36e575f222073a2d17fbe5a55b47c28688a65f293cd11d61c/python-mpv-1.0.3.tar.gz",
+            "sha256": "4ad0945c38ac0dd3bf5df46bdbee06681aee9c48e89100193ff172857d5b2233"
         }
     ]
 }
