@@ -180,6 +180,19 @@
           ]
         },
         {
+          "name": "zimg",
+          "config-opts": ["--disable-static"],
+          "cleanup": [ "/lib/pkgconfig", "/include", "/share/doc" ],
+          "sources": [
+            {
+              "type": "archive",
+              "url": "https://api.github.com/repos/sekrit-twc/zimg/tarball/release-3.0.4",
+              "archive-type": "tar",
+              "sha256": "c86b5a169b22c562172a11d83ce76a82dbdafc82149edcb8a06d0beeb94b193e"
+            }
+          ]
+        },
+        {
           "name": "rubberband",
           "buildsystem": "meson",
           "cleanup": [ "/lib/pkgconfig", "/include" ],
@@ -403,6 +416,19 @@
               "commands": [
                 "sed -i 's|/usr/local|/app|' ./Makefile"
               ]
+            }
+          ]
+        },
+        {
+          "name": "zimg",
+          "config-opts": ["--disable-static"],
+          "cleanup": [ "/lib/pkgconfig", "/include", "/share/doc" ],
+          "sources": [
+            {
+              "type": "archive",
+              "url": "https://api.github.com/repos/sekrit-twc/zimg/tarball/release-3.0.4",
+              "archive-type": "tar",
+              "sha256": "c86b5a169b22c562172a11d83ce76a82dbdafc82149edcb8a06d0beeb94b193e"
             }
           ]
         },
