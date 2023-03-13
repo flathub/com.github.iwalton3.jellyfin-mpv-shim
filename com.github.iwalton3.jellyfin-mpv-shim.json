@@ -255,8 +255,8 @@
               "builddir": true,
               "config-opts": [
                 "-DSHADERC_SKIP_COPYRIGHT_CHECK=ON",
-                "-DSHADERC_SKIP_TESTS=ON",
-                "-DSHADERC_SKIP_EXAMPLES=ON"
+                "-DSHADERC_SKIP_EXAMPLES=ON",
+                "-DSHADERC_SKIP_TESTS=ON"
               ],
               "cleanup": [ "/bin", "/lib/cmake", "/lib/pkgconfig", "/include" ],
               "post-install": [
@@ -270,7 +270,7 @@
                   "sha256": "b7e54b23a83343d5e2da836d8833ae0db11926141955edf845e35d4dc1eb88d1"
                 },
                 {
-                  "type": "script",
+                  "type": "shell",
                   "commands": [
                     "sed -i 's|SPIRV/GlslangToSpv.h|glslang/SPIRV/GlslangToSpv.h|' libshaderc_util/src/compiler.cc",
                     "sed -i 's|add_subdirectory(third_party)||' CMakeLists.txt",
@@ -496,8 +496,8 @@
               "builddir": true,
               "config-opts": [
                 "-DSHADERC_SKIP_COPYRIGHT_CHECK=ON",
-                "-DSHADERC_SKIP_TESTS=ON",
-                "-DSHADERC_SKIP_EXAMPLES=ON"
+                "-DSHADERC_SKIP_EXAMPLES=ON",
+                "-DSHADERC_SKIP_TESTS=ON"
               ],
               "cleanup": [ "/bin", "/lib/cmake", "/lib/pkgconfig", "/include" ],
               "post-install": [
@@ -511,7 +511,7 @@
                   "sha256": "b7e54b23a83343d5e2da836d8833ae0db11926141955edf845e35d4dc1eb88d1"
                 },
                 {
-                  "type": "script",
+                  "type": "shell",
                   "commands": [
                     "sed -i 's|SPIRV/GlslangToSpv.h|glslang/SPIRV/GlslangToSpv.h|' libshaderc_util/src/compiler.cc",
                     "sed -i 's|add_subdirectory(third_party)||' CMakeLists.txt",
