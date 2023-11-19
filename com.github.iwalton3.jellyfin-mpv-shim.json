@@ -10,6 +10,7 @@
     "--socket=wayland",
     "--device=all",
     "--share=network",
+    "--filesystem=xdg-run/pipewire-0",
     "--socket=pulseaudio",
     "--talk-name=org.gnome.SettingsDaemon.MediaKeys",
     "--env=LC_NUMERIC=C"
