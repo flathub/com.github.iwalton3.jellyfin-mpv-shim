@@ -42,8 +42,8 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/9a/b6/a8aef08d843b75341c611271ec73d25f0d94601768ab7c9edb2ea890f0fe/jellyfin_mpv_shim-2.7.0.post1-py3-none-any.whl",
-                    "sha256": "6764d6f1689334afc27aad1339584b75c5355d559bc07b63183485c2202fc46b"
+                    "url": "https://files.pythonhosted.org/packages/2e/a2/600c9700db6135a8027c3731f03116ee376cad9f909a6483c7b67b5b9af0/jellyfin_mpv_shim-2.7.0.post2-py3-none-any.whl",
+                    "sha256": "15254c08803696b64b1b3a5a99f3b866dbf17deb5c2e788c2b737bce5371598f"
                 },
                 {
                     "type": "file",
