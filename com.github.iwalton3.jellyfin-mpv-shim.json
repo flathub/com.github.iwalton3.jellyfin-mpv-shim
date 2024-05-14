@@ -1,7 +1,7 @@
 {
   "app-id": "com.github.iwalton3.jellyfin-mpv-shim",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "43",
+  "runtime-version": "46",
   "sdk": "org.gnome.Sdk",
   "command": "jellyfin-mpv-shim",
   "finish-args": [
@@ -19,116 +19,108 @@
       "name": "tkinter",
       "buildsystem": "simple",
       "build-commands": [
-          "pip3 install --prefix=${FLATPAK_DEST} ."
+        "pip3 install --prefix=${FLATPAK_DEST} ."
       ],
       "sources": [
         {
           "type": "git",
           "url": "https://github.com/iwalton3/tkinter-standalone",
-          "commit": "2301112d142ebaf7532b25600c77d1a2edc9ef04"
+          "commit": "d9cb97c5bd4f814c73678366e0e48220776b6ad3"
         }
       ],
       "modules": [
         {
-          "name": "tcl8.6.8",
+          "name": "tcl8.6",
           "sources": [
             {
               "type": "archive",
-              "url": "http://prdownloads.sourceforge.net/tcl/tcl8.6.6-src.tar.gz",
-              "sha256": "a265409781e4b3edcc4ef822533071b34c3dc6790b893963809b9fe221befe07"
+              "url": "https://sourceforge.net/projects/tcl/files/Tcl/8.6.12/tcl8.6.12-src.tar.gz",
+              "sha256": "26c995dd0f167e48b11961d891ee555f680c175f7173ff8cb829f4ebcde4c1a6",
+              "x-checker-data": {
+                  "type": "html",
+                  "url": "https://sourceforge.net/projects/tcl/rss",
+                  "pattern": "<link>(https://sourceforge.net/.+/tcl(8\\.6\\.[\\d\\.]*\\d)-src.tar.gz)/download"
+              }
             }
           ],
           "subdir": "unix",
           "post-install": [
-            "chmod +w /app/lib/libtcl8.6.so"
+            "chmod +w ${FLATPAK_DEST}/lib/libtcl8.6.so"
           ]
         },
         {
-          "name": "tk8.6.6",
+          "name": "tk8.6",
           "sources": [
             {
               "type": "archive",
-              "url": "http://prdownloads.sourceforge.net/tcl/tk8.6.6-src.tar.gz",
-              "sha256": "d62c371a71b4744ed830e3c21d27968c31dba74dd2c45f36b9b071e6d88eb19d"
+              "url": "https://sourceforge.net/projects/tcl/files/Tcl/8.6.12/tk8.6.12-src.tar.gz",
+              "sha256": "12395c1f3fcb6bed2938689f797ea3cdf41ed5cb6c4766eec8ac949560310630",
+              "x-checker-data": {
+                  "type": "html",
+                  "url": "https://sourceforge.net/projects/tcl/rss",
+                  "pattern": "<link>(https://sourceforge.net/.+/tk(8\\.6\\.[\\d\\.]*\\d)-src.tar.gz)/download"
+              }
             }
           ],
           "subdir": "unix",
           "post-install": [
-            "chmod +w /app/lib/libtk8.6.so"
+            "chmod +w ${FLATPAK_DEST}/lib/libtk8.6.so"
           ]
         }
       ]
     },
     {
       "name": "mpv",
-      "only-arches": ["i386", "x86_64"],
-      "buildsystem": "simple",
-      "build-commands": [
-        "python3 waf configure --prefix=/app --enable-libmpv-shared --disable-cplayer --disable-build-date --disable-manpage-build --enable-vaapi --enable-cuda-hwaccel --enable-pulse --enable-alsa --disable-tv --enable-uchardet",
-        "python3 waf build",
-        "python3 waf install"
+      "buildsystem": "meson",
+      "config-opts": [
+        "-Dlibmpv=true",
+        "-Dcplayer=false",
+        "-Dbuild-date=false",
+        "-Dmanpage-build=disabled",
+        "-Dvaapi=enabled",
+        "-Dcuda-hwaccel=enabled",
+        "-Dpulse=enabled",
+        "-Dalsa=enabled",
+        "-Duchardet=enabled"
       ],
-      "cleanup": [ "/lib/pkgconfig", "/share", "/include" ],
+      "cleanup": [
+        "/lib/pkgconfig",
+        "/share",
+        "/include"
+      ],
       "sources": [
         {
-          "type": "archive",
-          "url": "https://github.com/mpv-player/mpv/archive/v0.35.1.tar.gz",
-          "sha256": "41df981b7b84e33a2ef4478aaf81d6f4f5c8b9cd2c0d337ac142fc20b387d1a9"
-        },
-        {
-          "type": "file",
-          "url": "https://waf.io/waf-2.0.25",
-          "sha256": "21199cd220ccf60434133e1fd2ab8c8e5217c3799199c82722543970dc8e38d5",
-          "dest-filename": "waf"
+          "type": "git",
+          "url": "https://github.com/mpv-player/mpv.git",
+          "tag": "v0.38.0",
+          "commit": "02254b92dd237f03aa0a151c2a68778c4ea848f9",
+          "x-checker-data": {
+            "type": "git",
+            "tag-pattern": "^v([\\d.]+)$"
+          }
         }
       ],
       "modules": [
         {
-          "name": "libXmu",
-          "buildsystem": "autotools",
-          "sources": [
-            {
-              "type": "archive",
-              "url": "https://github.com/freedesktop/libXmu/archive/libXmu-1.1.2.tar.gz",
-              "sha256": "fb1485a0ffcc360c0cc8fe18f54a2f49af6fc384da743c0b136ab99cc6c6e54c"
-            }
-          ]
-        },
-        {
-          "name": "xclip",
-          "buildsystem": "autotools",
-          "sources": [
-            {
-              "type": "archive",
-              "url": "https://github.com/astrand/xclip/archive/0.13.tar.gz",
-              "sha256": "ca5b8804e3c910a66423a882d79bf3c9450b875ac8528791fb60ec9de667f758"
-            }
-          ]
-        },
-        {
-          "name": "libXpresent",
-          "buildsystem": "autotools",
-          "sources": [
-            {
-              "type": "archive",
-              "url": "https://xorg.freedesktop.org/archive/individual/lib/libXpresent-1.0.1.tar.xz",
-              "sha256": "b964df9e5a066daa5e08d2dc82692c57ca27d00b8cc257e8e960c9f1cf26231b"
-            }
-          ]
-        },
-        {
           "name": "ffnvcodec",
           "buildsystem": "simple",
           "build-commands": [
-              "make install PREFIX=/app"
+            "make install PREFIX=/app"
           ],
-          "only-arches": ["i386", "x86_64"],
-          "cleanup": [ "/lib/pkgconfig", "/include" ],
+          "cleanup": [
+            "/lib/pkgconfig",
+            "/include"
+          ],
           "sources": [
             {
-              "type": "archive",
-              "url": "https://github.com/FFmpeg/nv-codec-headers/releases/download/n11.1.5.2/nv-codec-headers-11.1.5.2.tar.gz",
-              "sha256": "1442e3159e7311dd71f8fca86e615f51609998939b6a6d405d6683d8eb3af6ee"
+              "type": "git",
+              "url": "https://github.com/FFmpeg/nv-codec-headers.git",
+              "tag": "n12.2.72.0",
+              "commit": "c69278340ab1d5559c7d7bf0edf615dc33ddbba7",
+              "x-checker-data": {
+                "type": "git",
+                "tag-pattern": "^n([\\d.]+)$"
+              }
             }
           ]
         },
@@ -146,155 +138,49 @@
             "--disable-devices",
             "--enable-vaapi",
             "--enable-cuvid",
-            "--enable-libdav1d"
+            "--enable-libdav1d",
+            "--enable-gpl"
           ],
-          "cleanup": [ "/lib/pkgconfig", "/share", "/include" ],
-          "sources": [{
-            "type": "archive",
-            "url": "https://ffmpeg.org/releases/ffmpeg-5.1.2.tar.xz",
-            "sha256": "619e706d662c8420859832ddc259cd4d4096a48a2ce1eefd052db9e440eef3dc"
-          }]
-        },
-        {
-          "name": "luajit",
-          "no-autogen": true,
           "cleanup": [
-            "/bin",
-            "/lib/*.a",
-            "/include",
             "/lib/pkgconfig",
-            "/share/man"
-          ],
-          "sources": [
-            {
-              "type": "archive",
-              "url": "http://luajit.org/download/LuaJIT-2.1.0-beta3.tar.gz",
-              "sha256": "1ad2e34b111c802f9d0cdf019e986909123237a28c746b21295b63c9e785d9c3"
-            },
-            {
-              "type": "shell",
-              "commands": [
-                "sed -i 's|/usr/local|/app|' ./Makefile"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "zimg",
-          "config-opts": ["--disable-static"],
-          "cleanup": [ "/lib/pkgconfig", "/include", "/share/doc" ],
-          "sources": [
-            {
-              "type": "archive",
-              "url": "https://api.github.com/repos/sekrit-twc/zimg/tarball/release-3.0.4",
-              "archive-type": "tar",
-              "sha256": "c86b5a169b22c562172a11d83ce76a82dbdafc82149edcb8a06d0beeb94b193e"
-            }
-          ]
-        },
-        {
-          "name": "rubberband",
-          "buildsystem": "meson",
-          "cleanup": [ "/lib/pkgconfig", "/include" ],
-          "sources": [
-            {
-              "type": "archive",
-              "url": "https://breakfastquay.com/files/releases/rubberband-3.1.2.tar.bz2",
-              "sha256": "dda7e257b14c59a1f59c5ccc4d6f19412039f77834275955aa0ff511779b98d2"
-            }
-          ]
-        },
-        {
-          "name": "mujs",
-          "no-autogen": true,
-          "make-args": ["release", "shared"],
-          "make-install-args": ["prefix=/app", "install-shared"],
-          "cleanup": [
-            "/bin",
-            "/include",
-            "/lib/pkgconfig"
+            "/share",
+            "/include"
           ],
           "sources": [
             {
               "type": "git",
-              "url": "https://github.com/ccxvii/mujs.git",
-              "tag": "1.3.2",
-              "commit": "0e611cdc0c81a90dabfcb2ab96992acca95b886d"
+              "url": "https://github.com/FFmpeg/FFmpeg.git",
+              "tag": "n7.0",
+              "commit": "083443d67cb159ce469e5d902346b8d0c2cd1c93",
+              "x-checker-data": {
+                "type": "git",
+                "tag-pattern": "^n([\\d.]+)$"
+              }
             }
           ]
         },
-        {
-          "name": "vapoursynth",
-          "config-opts": ["--disable-static", "--with-python_prefix=/app"],
-          "sources": [
-            {
-              "type": "git",
-              "url": "https://github.com/vapoursynth/vapoursynth.git",
-              "tag": "R61",
-              "commit": "35fe1e3b8b45553c6086c014645a9266388b43c6"
-            }
-          ]
-        },
-        {
-          "name": "libplacebo",
-          "buildsystem": "meson",
-          "config-opts": ["-Dvulkan=enabled", "-Dshaderc=enabled"],
-          "cleanup": [ "/lib/pkgconfig", "/include" ],
-          "sources": [
-            {
-              "type": "git",
-              "url": "https://code.videolan.org/videolan/libplacebo.git",
-              "tag": "v5.229.2",
-              "commit": "2394aea167a5995860387a2511f8972143cd5b82"
-            }
-          ],
-          "modules": [
-            {
-              "name": "shaderc",
-              "buildsystem": "cmake-ninja",
-              "builddir": true,
-              "config-opts": [
-                "-DSHADERC_SKIP_COPYRIGHT_CHECK=ON",
-                "-DSHADERC_SKIP_EXAMPLES=ON",
-                "-DSHADERC_SKIP_TESTS=ON"
-              ],
-              "cleanup": [ "/bin", "/lib/cmake", "/lib/pkgconfig", "/include" ],
-              "post-install": [
-                "install -D /lib/$(gcc --print-multiarch)/libSPIRV*.so /app/lib"
-              ],
-              "sources": [
-                {
-                  "type": "archive",
-                  "archive-type": "tar",
-                  "url": "https://api.github.com/repos/google/shaderc/tarball/refs/tags/v2021.3",
-                  "sha256": "b7e54b23a83343d5e2da836d8833ae0db11926141955edf845e35d4dc1eb88d1"
-                },
-                {
-                  "type": "shell",
-                  "commands": [
-                    "sed -i 's|SPIRV/GlslangToSpv.h|glslang/SPIRV/GlslangToSpv.h|' libshaderc_util/src/compiler.cc",
-                    "sed -i 's|add_subdirectory(third_party)||' CMakeLists.txt",
-                    "sed -i 's|add_custom_target(build-version|set(NOT_USE|' CMakeLists.txt",
-                    "LIB=/lib/$(gcc --print-multiarch)\nVER_MATCH=\"[0-9]+\\.[^\\. ]+\"\nSHADERC=$(grep -m1 -oP \"^v$VER_MATCH\" CHANGES)\nSPIRV=v$(grep -oP \"(?<=Version:.)$VER_MATCH\" $LIB/pkgconfig/SPIRV-Tools-shared.pc)\nGLSLANG=v$(realpath $LIB/libglslang.so | grep -oP \"(?<=so.)$VER_MATCH\")\ncat <<- EOF > glslc/src/build-version.inc\n  \"shaderc $SHADERC\"\n  \"spirv-tools $SPIRV\"\n  \"glslang $GLSLANG\"\nEOF",
-                    "cat glslc/src/build-version.inc"
-                  ]
-                }
-              ]
-            }
-          ]
-        },
+        "shared-modules/luajit/luajit.json",
         {
           "name": "libass",
           "config-opts": [
             "--enable-shared",
             "--disable-static"
           ],
-          "cleanup": [ "/lib/*.la", "/lib/pkgconfig", "/include" ],
+          "cleanup": [
+            "/lib/*.la",
+            "/lib/pkgconfig",
+            "/include"
+          ],
           "sources": [
             {
-              "type": "archive",
-              "url": "https://github.com/libass/libass/releases/download/0.17.0/libass-0.17.0.tar.xz",
-              "sha256": "971e2e1db59d440f88516dcd1187108419a370e64863f70687da599fdf66cc1a"
+              "type": "git",
+              "url": "https://github.com/libass/libass.git",
+              "tag": "0.17.1",
+              "commit": "e8ad72accd3a84268275a9385beb701c9284e5b3",
+              "x-checker-data": {
+                "type": "git",
+                "tag-pattern": "^([\\d.]+)$"
+              }
             }
           ]
         },
@@ -306,187 +192,47 @@
             "-DCMAKE_INSTALL_LIBDIR=lib",
             "-DBUILD_BINARY=OFF"
           ],
-          "cleanup": [ "/lib/*.a", "/lib/pkgconfig", "/share", "/include" ],
+          "cleanup": [
+            "/lib/*.a",
+            "/lib/pkgconfig",
+            "/share",
+            "/include"
+          ],
           "sources": [
             {
               "type": "archive",
               "url": "https://www.freedesktop.org/software/uchardet/releases/uchardet-0.0.8.tar.xz",
-              "sha256": "e97a60cfc00a1c147a674b097bb1422abd9fa78a2d9ce3f3fdcc2e78a34ac5f0"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "mpv",
-      "skip-arches": ["i386", "x86_64"],
-      "buildsystem": "simple",
-      "build-commands": [
-        "python3 waf configure --prefix=/app --enable-libmpv-shared --disable-cplayer --disable-build-date --disable-manpage-build --enable-vaapi --enable-pulse --enable-alsa --disable-tv --enable-uchardet",
-        "python3 waf build",
-        "python3 waf install"
-      ],
-      "cleanup": [ "/lib/pkgconfig", "/share", "/include" ],
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://github.com/mpv-player/mpv/archive/v0.35.1.tar.gz",
-          "sha256": "41df981b7b84e33a2ef4478aaf81d6f4f5c8b9cd2c0d337ac142fc20b387d1a9"
-        },
-        {
-          "type": "file",
-          "url": "https://waf.io/waf-2.0.25",
-          "sha256": "21199cd220ccf60434133e1fd2ab8c8e5217c3799199c82722543970dc8e38d5",
-          "dest-filename": "waf"
-        }
-      ],
-      "modules": [
-        {
-          "name": "libXmu",
-          "buildsystem": "autotools",
-          "sources": [
-            {
-              "type": "archive",
-              "url": "https://github.com/freedesktop/libXmu/archive/libXmu-1.1.2.tar.gz",
-              "sha256": "fb1485a0ffcc360c0cc8fe18f54a2f49af6fc384da743c0b136ab99cc6c6e54c"
-            }
-          ]
-        },
-        {
-          "name": "xclip",
-          "buildsystem": "autotools",
-          "sources": [
-            {
-              "type": "archive",
-              "url": "https://github.com/astrand/xclip/archive/0.13.tar.gz",
-              "sha256": "ca5b8804e3c910a66423a882d79bf3c9450b875ac8528791fb60ec9de667f758"
-            }
-          ]
-        },
-        {
-          "name": "libXpresent",
-          "buildsystem": "autotools",
-          "sources": [
-            {
-              "type": "archive",
-              "url": "https://xorg.freedesktop.org/archive/individual/lib/libXpresent-1.0.1.tar.xz",
-              "sha256": "b964df9e5a066daa5e08d2dc82692c57ca27d00b8cc257e8e960c9f1cf26231b"
-            }
-          ]
-        },
-        {
-          "name": "ffmpeg",
-          "config-opts": [
-            "--enable-shared",
-            "--disable-static",
-            "--enable-gnutls",
-            "--enable-pic",
-            "--disable-doc",
-            "--disable-programs",
-            "--disable-encoders",
-            "--disable-muxers",
-            "--disable-devices",
-            "--enable-vaapi",
-            "--enable-libdav1d"
-          ],
-          "cleanup": [ "/lib/pkgconfig", "/share", "/include" ],
-          "sources": [{
-            "type": "archive",
-            "url": "https://ffmpeg.org/releases/ffmpeg-5.1.2.tar.xz",
-            "sha256": "619e706d662c8420859832ddc259cd4d4096a48a2ce1eefd052db9e440eef3dc"
-          }]
-        },
-        {
-          "name": "luajit",
-          "no-autogen": true,
-          "cleanup": [
-            "/bin",
-            "/lib/*.a",
-            "/include",
-            "/lib/pkgconfig",
-            "/share/man"
-          ],
-          "sources": [
-            {
-              "type": "archive",
-              "url": "http://luajit.org/download/LuaJIT-2.1.0-beta3.tar.gz",
-              "sha256": "1ad2e34b111c802f9d0cdf019e986909123237a28c746b21295b63c9e785d9c3"
-            },
-            {
-              "type": "shell",
-              "commands": [
-                "sed -i 's|/usr/local|/app|' ./Makefile"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "zimg",
-          "config-opts": ["--disable-static"],
-          "cleanup": [ "/lib/pkgconfig", "/include", "/share/doc" ],
-          "sources": [
-            {
-              "type": "archive",
-              "url": "https://api.github.com/repos/sekrit-twc/zimg/tarball/release-3.0.4",
-              "archive-type": "tar",
-              "sha256": "c86b5a169b22c562172a11d83ce76a82dbdafc82149edcb8a06d0beeb94b193e"
-            }
-          ]
-        },
-        {
-          "name": "rubberband",
-          "buildsystem": "meson",
-          "cleanup": [ "/lib/pkgconfig", "/include" ],
-          "sources": [
-            {
-              "type": "archive",
-              "url": "https://breakfastquay.com/files/releases/rubberband-3.1.2.tar.bz2",
-              "sha256": "dda7e257b14c59a1f59c5ccc4d6f19412039f77834275955aa0ff511779b98d2"
-            }
-          ]
-        },
-        {
-          "name": "mujs",
-          "no-autogen": true,
-          "make-args": ["release", "shared"],
-          "make-install-args": ["prefix=/app", "install-shared"],
-          "cleanup": [
-            "/bin",
-            "/include",
-            "/lib/pkgconfig"
-          ],
-          "sources": [
-            {
-              "type": "git",
-              "url": "https://github.com/ccxvii/mujs.git",
-              "tag": "1.3.2",
-              "commit": "0e611cdc0c81a90dabfcb2ab96992acca95b886d"
-            }
-          ]
-        },
-        {
-          "name": "vapoursynth",
-          "config-opts": ["--disable-static", "--with-python_prefix=/app"],
-          "sources": [
-            {
-              "type": "git",
-              "url": "https://github.com/vapoursynth/vapoursynth.git",
-              "tag": "R61",
-              "commit": "35fe1e3b8b45553c6086c014645a9266388b43c6"
+              "sha256": "e97a60cfc00a1c147a674b097bb1422abd9fa78a2d9ce3f3fdcc2e78a34ac5f0",
+              "x-checker-data": {
+                "type": "html",
+                "url": "https://www.freedesktop.org/software/uchardet/releases/",
+                "version-pattern": "uchardet-(\\d+\\.\\d+\\.\\d+)\\.tar\\.xz",
+                "url-template": "https://www.freedesktop.org/software/uchardet/releases/uchardet-$version.tar.xz"
+              }
             }
           ]
         },
         {
           "name": "libplacebo",
           "buildsystem": "meson",
-          "config-opts": ["-Dvulkan=enabled", "-Dshaderc=enabled"],
-          "cleanup": [ "/lib/pkgconfig", "/include" ],
+          "config-opts": [
+            "-Dvulkan=enabled",
+            "-Dshaderc=enabled"
+          ],
+          "cleanup": [
+            "/include",
+            "/lib/pkgconfig"
+          ],
           "sources": [
             {
               "type": "git",
               "url": "https://code.videolan.org/videolan/libplacebo.git",
-              "tag": "v5.229.2",
-              "commit": "2394aea167a5995860387a2511f8972143cd5b82"
+              "tag": "v6.338.2",
+              "commit": "64c1954570f1cd57f8570a57e51fb0249b57bb90",
+              "x-checker-data": {
+                "type": "git",
+                "tag-pattern": "^v([\\d.]+)$"
+              }
             }
           ],
           "modules": [
@@ -497,169 +243,62 @@
               "config-opts": [
                 "-DSHADERC_SKIP_COPYRIGHT_CHECK=ON",
                 "-DSHADERC_SKIP_EXAMPLES=ON",
-                "-DSHADERC_SKIP_TESTS=ON"
+                "-DSHADERC_SKIP_TESTS=ON",
+                "-DSPIRV_SKIP_EXECUTABLES=ON",
+                "-DENABLE_GLSLANG_BINARIES=OFF",
+                "-DCMAKE_BUILD_TYPE=Release"
               ],
-              "cleanup": [ "/bin", "/lib/cmake", "/lib/pkgconfig", "/include" ],
-              "post-install": [
-                "install -D /lib/$(gcc --print-multiarch)/libSPIRV*.so /app/lib"
+              "cleanup": [
+                "/bin",
+                "/include",
+                "/lib/*.a",
+                "/lib/cmake",
+                "/lib/pkgconfig"
               ],
               "sources": [
                 {
-                  "type": "archive",
-                  "archive-type": "tar",
-                  "url": "https://api.github.com/repos/google/shaderc/tarball/refs/tags/v2021.3",
-                  "sha256": "b7e54b23a83343d5e2da836d8833ae0db11926141955edf845e35d4dc1eb88d1"
+                  "type": "git",
+                  "url": "https://github.com/google/shaderc.git",
+                  "tag": "v2024.1",
+                  "commit": "47a9387ef5b3600d30d84c71ec77a59dc7db46fa",
+                  "x-checker-data": {
+                    "type": "git",
+                    "tag-pattern": "^v([\\d.]+)$"
+                  }
                 },
                 {
-                  "type": "shell",
-                  "commands": [
-                    "sed -i 's|SPIRV/GlslangToSpv.h|glslang/SPIRV/GlslangToSpv.h|' libshaderc_util/src/compiler.cc",
-                    "sed -i 's|add_subdirectory(third_party)||' CMakeLists.txt",
-                    "sed -i 's|add_custom_target(build-version|set(NOT_USE|' CMakeLists.txt",
-                    "LIB=/lib/$(gcc --print-multiarch)\nVER_MATCH=\"[0-9]+\\.[^\\. ]+\"\nSHADERC=$(grep -m1 -oP \"^v$VER_MATCH\" CHANGES)\nSPIRV=v$(grep -oP \"(?<=Version:.)$VER_MATCH\" $LIB/pkgconfig/SPIRV-Tools-shared.pc)\nGLSLANG=v$(realpath $LIB/libglslang.so | grep -oP \"(?<=so.)$VER_MATCH\")\ncat <<- EOF > glslc/src/build-version.inc\n  \"shaderc $SHADERC\"\n  \"spirv-tools $SPIRV\"\n  \"glslang $GLSLANG\"\nEOF",
-                    "cat glslc/src/build-version.inc"
-                  ]
+                  "type": "git",
+                  "url": "https://github.com/KhronosGroup/SPIRV-Tools.git",
+                  "tag": "v2023.2",
+                  "commit": "44d72a9b36702f093dd20815561a56778b2d181e",
+                  "dest": "third_party/spirv-tools"
+                },
+                {
+                  "type": "git",
+                  "url": "https://github.com/KhronosGroup/SPIRV-Headers.git",
+                  "tag": "sdk-1.3.250.1",
+                  "commit": "268a061764ee69f09a477a695bf6a11ffe311b8d",
+                  "dest": "third_party/spirv-headers"
+                },
+                {
+                  "type": "git",
+                  "url": "https://github.com/KhronosGroup/glslang.git",
+                  "tag": "14.2.0",
+                  "commit": "e8dd0b6903b34f1879520b444634c75ea2deedf5",
+                  "dest": "third_party/glslang",
+                  "x-checker-data": {
+                    "type": "git",
+                    "tag-pattern": "^([\\d.]+)$"
+                  }
                 }
               ]
-            }
-          ]
-        },
-        {
-          "name": "libass",
-          "config-opts": [
-            "--enable-shared",
-            "--disable-static"
-          ],
-          "cleanup": [ "/lib/*.la", "/lib/pkgconfig", "/include" ],
-          "sources": [
-            {
-              "type": "archive",
-              "url": "https://github.com/libass/libass/releases/download/0.17.0/libass-0.17.0.tar.xz",
-              "sha256": "971e2e1db59d440f88516dcd1187108419a370e64863f70687da599fdf66cc1a"
-            }
-          ]
-        },
-        {
-          "name": "uchardet",
-          "buildsystem": "cmake-ninja",
-          "config-opts": [
-            "-DCMAKE_BUILD_TYPE=Release",
-            "-DCMAKE_INSTALL_LIBDIR=lib",
-            "-DBUILD_BINARY=OFF"
-          ],
-          "cleanup": [ "/lib/*.a", "/lib/pkgconfig", "/share", "/include" ],
-          "sources": [
-            {
-              "type": "archive",
-              "url": "https://www.freedesktop.org/software/uchardet/releases/uchardet-0.0.8.tar.xz",
-              "sha256": "e97a60cfc00a1c147a674b097bb1422abd9fa78a2d9ce3f3fdcc2e78a34ac5f0"
             }
           ]
         }
       ]
     },
-    {
-      "name": "gir1.2-appindicator3",
-      "cleanup": [
-        "/bin",
-        "/include",
-        "/lib/pkgconfig",
-        "/share/man"
-      ],
-      "config-opts": [
-        "--with-gtk=3"
-      ],
-      "make-install-args": [
-        "PREFIX=/app"
-      ],
-      "rm-configure": true,
-      "sources": [
-        {
-          "type": "archive",
-          "url": "http://deb.debian.org/debian/pool/main/liba/libappindicator/libappindicator_0.4.92.orig.tar.gz",
-          "sha256": "b034263908f79a321542d3aaa32cc30381a3fbed5ee42af4347caaff4a853803"
-        },
-        {
-          "type": "archive",
-          "url": "http://deb.debian.org/debian/pool/main/liba/libappindicator/libappindicator_0.4.92-7.debian.tar.xz",
-          "sha256": "cd551f40d66f65202a4bb1ccd1ff484844d57227aa07e8a5bade82ba734dbe6b"
-        },
-        {
-          "type": "shell",
-          "commands": [
-            "for patch in $(cat patches/series); do patch -p1 < patches/$patch; done",
-            "sed -i 's|-Werror||g' ./*/Makefile.*"
-          ]
-        }
-      ],
-      "modules": [
-        {
-          "name": "libindicator",
-          "sources": [
-            {
-              "type": "archive",
-              "url": "http://deb.debian.org/debian/pool/main/libi/libindicator/libindicator_0.5.0.orig.tar.gz",
-              "sha256": "f05f5e329d55d32000606b9d75d1b2b722b682e440cf7e325440811836554622"
-            },
-            {
-              "type": "shell",
-              "commands": [
-                "sed -i 's|-Werror||g' ./libindicator/Makefile.*"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "libdbusmenu",
-          "sources": [
-            {
-              "type": "archive",
-              "url": "http://deb.debian.org/debian/pool/main/libd/libdbusmenu/libdbusmenu_18.10.20180917~bzr492+repack1.orig.tar.xz",
-              "sha256": "41298b926573419f21864205317461750b833c596af6ab0bd206e13336f8cee3"
-            }
-          ],
-          "config-opts": [
-            "--with-gtk=3",
-            "--disable-dumper"
-          ],
-          "make-install-args": [
-            "INTROSPECTION_TYPELIBDIR=/app/lib/girepository-1.0"
-          ],
-          "modules": [
-            {
-              "name": "gnome-common",
-              "sources": [
-                {
-                  "type": "archive",
-                  "url": "http://deb.debian.org/debian/pool/main/g/gnome-common/gnome-common_3.18.0.orig.tar.xz",
-                  "sha256": "22569e370ae755e04527b76328befc4c73b62bfd4a572499fde116b8318af8cf"
-                }
-              ]
-            },
-            {
-              "name": "intltool",
-              "sources": [
-                {
-                  "type": "archive",
-                  "url": "http://deb.debian.org/debian/pool/main/i/intltool/intltool_0.51.0.orig.tar.gz",
-                  "sha256": "67c74d94196b153b774ab9f89b2fa6c6ba79352407037c8c14d5aeb334e959cd"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "libdbus-glib-1",
-          "sources": [
-            {
-              "type": "archive",
-              "url": "http://deb.debian.org/debian/pool/main/d/dbus-glib/dbus-glib_0.110.orig.tar.gz",
-              "sha256": "7ce4760cf66c69148f6bd6c92feaabb8812dee30846b24cd0f7395c436d7e825"
-            }
-          ]
-        }
-      ]
-    },
+    "shared-modules/libappindicator/libappindicator-gtk3-introspection-12.10.json",
+    "shared-modules/libappindicator/libappindicator-gtk3-12.10.json",
     {
       "name": "jellyfin-mpv-shim",
       "buildsystem": "simple",
