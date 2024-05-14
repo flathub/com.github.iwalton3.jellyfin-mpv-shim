@@ -102,6 +102,39 @@
       ],
       "modules": [
         {
+          "name": "libXmu",
+          "buildsystem": "autotools",
+          "sources": [
+            {
+              "type": "archive",
+              "url": "https://github.com/freedesktop/libXmu/archive/libXmu-1.1.2.tar.gz",
+              "sha256": "fb1485a0ffcc360c0cc8fe18f54a2f49af6fc384da743c0b136ab99cc6c6e54c"
+            }
+          ]
+        },
+        {
+          "name": "xclip",
+          "buildsystem": "autotools",
+          "sources": [
+            {
+              "type": "archive",
+              "url": "https://github.com/astrand/xclip/archive/0.13.tar.gz",
+              "sha256": "ca5b8804e3c910a66423a882d79bf3c9450b875ac8528791fb60ec9de667f758"
+            }
+          ]
+        },
+        {
+          "name": "libXpresent",
+          "buildsystem": "autotools",
+          "sources": [
+            {
+              "type": "archive",
+              "url": "https://xorg.freedesktop.org/archive/individual/lib/libXpresent-1.0.1.tar.xz",
+              "sha256": "b964df9e5a066daa5e08d2dc82692c57ca27d00b8cc257e8e960c9f1cf26231b"
+            }
+          ]
+        },
+        {
           "name": "zimg",
           "config-opts": ["--disable-static"],
           "cleanup": [ "/lib/pkgconfig", "/include", "/share/doc" ],
