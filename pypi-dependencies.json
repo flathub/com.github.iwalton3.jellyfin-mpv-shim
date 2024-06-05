@@ -2,7 +2,7 @@
     "name": "python3-jellyfin-mpv-shim[all]",
     "buildsystem": "simple",
     "build-commands": [
-        "pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} 'jellyfin-mpv-shim[all]'"
+        "pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} --no-build-isolation 'jellyfin-mpv-shim[all]'"
     ],
     "sources": [
         {
