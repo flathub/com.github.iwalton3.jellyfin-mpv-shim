@@ -35,7 +35,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/iwalton3/tkinter-standalone",
-                    "commit": "d9cb97c5bd4f814c73678366e0e48220776b6ad3"
+                    "commit": "4f5cfe3cdd1f58cd4e136fd66d4e5e27d21d820b"
                 }
             ],
             "modules": [
@@ -44,8 +44,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://sourceforge.net/projects/tcl/files/Tcl/8.6.15/tcl8.6.15-src.tar.gz",
-                            "sha256": "861e159753f2e2fbd6ec1484103715b0be56be3357522b858d3cbb5f893ffef1",
+                            "url": "https://sourceforge.net/projects/tcl/files/Tcl/8.6.16/tcl8.6.16-src.tar.gz",
+                            "sha256": "91cb8fa61771c63c262efb553059b7c7ad6757afa5857af6265e4b0bdc2a14a5",
                             "x-checker-data": {
                                 "type": "html",
                                 "url": "https://sourceforge.net/projects/tcl/rss",
@@ -63,8 +63,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://sourceforge.net/projects/tcl/files/Tcl/8.6.15/tk8.6.15-src.tar.gz",
-                            "sha256": "550969f35379f952b3020f3ab7b9dd5bfd11c1ef7c9b7c6a75f5c49aca793fec",
+                            "url": "https://sourceforge.net/projects/tcl/files/Tcl/8.6.16/tk8.6.16-src.tar.gz",
+                            "sha256": "be9f94d3575d4b3099d84bc3c10de8994df2d7aa405208173c709cc404a7e5fe",
                             "x-checker-data": {
                                 "type": "html",
                                 "url": "https://sourceforge.net/projects/tcl/rss",
@@ -157,9 +157,9 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://api.github.com/repos/sekrit-twc/zimg/tarball/release-3.0.4",
+                            "url": "https://github.com/sekrit-twc/zimg/archive/refs/tags/release-3.0.5.tar.gz",
                             "archive-type": "tar",
-                            "sha256": "c86b5a169b22c562172a11d83ce76a82dbdafc82149edcb8a06d0beeb94b193e"
+                            "sha256": "a9a0226bf85e0d83c41a8ebe4e3e690e1348682f6a2a7838f1b8cbff1b799bcf"
                         }
                     ]
                 },
@@ -173,8 +173,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://breakfastquay.com/files/releases/rubberband-3.1.2.tar.bz2",
-                            "sha256": "dda7e257b14c59a1f59c5ccc4d6f19412039f77834275955aa0ff511779b98d2"
+                            "url": "https://breakfastquay.com/files/releases/rubberband-4.0.0.tar.bz2",
+                            "sha256": "af050313ee63bc18b35b2e064e5dce05b276aaf6d1aa2b8a82ced1fe2f8028e9"
                         }
                     ]
                 },
@@ -182,8 +182,7 @@
                     "name": "mujs",
                     "no-autogen": true,
                     "make-args": [
-                        "release",
-                        "shared"
+                        "release"
                     ],
                     "make-install-args": [
                         "prefix=/app",
@@ -198,8 +197,8 @@
                         {
                             "type": "git",
                             "url": "https://github.com/ccxvii/mujs.git",
-                            "tag": "1.3.2",
-                            "commit": "0e611cdc0c81a90dabfcb2ab96992acca95b886d"
+                            "tag": "1.3.5",
+                            "commit": "0df0707f2f10187127e36acfbc3ba9b9ca5b5cf0"
                         }
                     ]
                 },
