@@ -44,8 +44,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://sourceforge.net/projects/tcl/files/Tcl/8.6.16/tcl8.6.16-src.tar.gz",
-                            "sha256": "91cb8fa61771c63c262efb553059b7c7ad6757afa5857af6265e4b0bdc2a14a5",
+                            "url": "https://sourceforge.net/projects/tcl/files/Tcl/8.6.17/tcl8.6.17-src.tar.gz",
+                            "sha256": "a3903371efcce8a405c5c245d029e9f6850258a60fa3761c4d58995610949b31",
                             "x-checker-data": {
                                 "type": "html",
                                 "url": "https://sourceforge.net/projects/tcl/rss",
@@ -102,8 +102,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/mpv-player/mpv.git",
-                    "tag": "v0.39.0",
-                    "commit": "a0fba7be57f3822d967b04f0f6b6d6341e7516e7",
+                    "tag": "v0.41.0",
+                    "commit": "41f6a645068483470267271e1d09966ca3b9f413",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
@@ -216,8 +216,8 @@
                         {
                             "type": "git",
                             "url": "https://github.com/FFmpeg/nv-codec-headers.git",
-                            "tag": "n12.2.72.0",
-                            "commit": "c69278340ab1d5559c7d7bf0edf615dc33ddbba7",
+                            "tag": "n13.0.19.0",
+                            "commit": "e844e5b26f46bb77479f063029595293aa8f812d",
                             "x-checker-data": {
                                 "type": "git",
                                 "tag-pattern": "^n([\\d.]+)$"
@@ -241,8 +241,8 @@
                         {
                             "type": "git",
                             "url": "https://github.com/libass/libass.git",
-                            "tag": "0.17.3",
-                            "commit": "e46aedea0a0d17da4c4ef49d84b94a7994664ab5",
+                            "tag": "0.17.4",
+                            "commit": "bbb3c7f1570a4a021e52683f3fbdf74fe492ae84",
                             "x-checker-data": {
                                 "type": "git",
                                 "tag-pattern": "^([\\d.]+)$"
@@ -290,8 +290,8 @@
                         {
                             "type": "git",
                             "url": "https://code.videolan.org/videolan/libplacebo.git",
-                            "tag": "v7.349.0",
-                            "commit": "1fd3c7bde7b943fe8985c893310b5269a09b46c5",
+                            "tag": "v7.360.0",
+                            "commit": "b2ea27dceb6418aabfe9121174c6dbb232942998",
                             "x-checker-data": {
                                 "type": "git",
                                 "tag-pattern": "^v([\\d.]+)$"
