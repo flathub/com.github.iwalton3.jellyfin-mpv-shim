@@ -7,11 +7,6 @@
     "sources": [
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/59/4a/05307135dafba67778669d194bd1a3822a7685ec9ee8a6d7e70856c1a551/pywebview-6.2.1.tar.gz",
-            "sha256": "71b7136752e40824655304d938efb62014218d1a90bd8e87e1cbdb1ce9c466af"
-        },
-        {
-            "type": "file",
             "url": "https://files.pythonhosted.org/packages/e7/a1/67fe25fac3c7642725500a3f6cfe5821ad557c3abb11c9d20d12c7008d3e/charset_normalizer-3.4.7.tar.gz",
             "sha256": "ae89db9e5f98a11a4bf50407d4363e7b09b31e55bc117b4f7d80aab97ba009e5"
         },
@@ -87,11 +82,6 @@
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/9f/67/a9f10bef821281f92702f722f9d6a8b825de30011542dfcd7302c371e63a/jellyfin-mpv-shim-2.9.0.tar.gz",
-            "sha256": "62bc0cbcfeba2c058a831ff258191622466d2786b462784288bef107a7c69b41"
-        },
-        {
-            "type": "file",
             "url": "https://files.pythonhosted.org/packages/ce/cc/762dfb036166873f0059f3b7de4565e1b5bc3d6f28a414c13da27e442f99/idna-3.13.tar.gz",
             "sha256": "585ea8fe5d69b9181ec1afba340451fba6ba764af97026f92a91d4eef164a242"
         },
@@ -102,18 +92,13 @@
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/72/94/1a15dd82efb362ac84269196e94cf00f187f7ed21c242792a923cdb1c61f/typing_extensions-4.15.0.tar.gz",
-            "sha256": "0cea48d173cc12fa28ecabc3b837ea3cf6f38c6d1136f85cbaaf598984861466"
+            "url": "https://files.pythonhosted.org/packages/51/30/5438233dc3abe7171b47c17a9c19d7e4e67bbe913cb5101a30673c6f8a2a/jellyfin_mpv_shim-2.10.0.tar.gz",
+            "sha256": "6569894090060289d2b59c96c30e0ffb4df87f6bc69d3c0bb9aeca50eaa80411"
         },
         {
             "type": "file",
             "url": "https://files.pythonhosted.org/packages/22/f3/4c632eaacebfc62ab9414586137aecf6c0ea2a1e99708cf5a4c0dec13ae0/python_mpv-1.0.8-py3-none-any.whl",
             "sha256": "b5296403e990fb7348df4ca2211937a030f524bf638657bda7e45a00bc2df0cd"
-        },
-        {
-            "type": "file",
-            "url": "https://files.pythonhosted.org/packages/7e/99/7690b6d4034fffd95959cbe0c02de8deb3098cc577c67bb6a24fe5d7caa7/markupsafe-3.0.3.tar.gz",
-            "sha256": "722695808f4b6457b320fdc131280796bdceb04ab50fe1795cd540799ebe1698"
         },
         {
             "type": "file",
@@ -132,11 +117,6 @@
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/df/bf/f7da0350254c0ed7c72f3e33cef02e048281fec7ecec5f032d4aac52226b/jinja2-3.1.6.tar.gz",
-            "sha256": "0137fb05990d35f1275a587e9aee6d56da821fc83491a0fb838183be43f66d6d"
-        },
-        {
-            "type": "file",
             "url": "https://files.pythonhosted.org/packages/62/a1/3d680cbfd5f4b8f15abc1d571870c5fc3e594bb582bc3b64ea099db13e56/jinja2-3.1.6-py3-none-any.whl",
             "sha256": "85ece4451f492d0c13c5dd7c13a64681a86afae63a5f347908daf103ce6d2f67"
         },
@@ -149,11 +129,6 @@
             "type": "file",
             "url": "https://files.pythonhosted.org/packages/aa/95/e596a8fe4925b1415181e117535aa3002cf236de06ae76b574d6531b79ea/pystray-0.19.4.tar.gz",
             "sha256": "858784d4e969fe8b5bee6b5476432cf136e7087fdeaf4a1424b13f4f4de87155"
-        },
-        {
-            "type": "file",
-            "url": "https://files.pythonhosted.org/packages/7a/71/cca6167c06d00c81375fd668719df245864076d284f7cb46a694cbeb5454/bottle-0.13.4.tar.gz",
-            "sha256": "787e78327e12b227938de02248333d788cfe45987edca735f8f88e03472c3f47"
         },
         {
             "type": "file",
