@@ -9,6 +9,7 @@ Please see: https://github.com/iwalton3/jellyfin-mpv-shim
 Use this command to update pypi-dependencies.
 ```
 flatpak-pip-generator 'jellyfin-mpv-shim[all]' --output pypi-dependencies
+flatpak-pip-generator pybind11 --output pypi-pybind11
 ```
 
 Then add `--no-build-isolation` to the `pypi-dependencies.json` file.
