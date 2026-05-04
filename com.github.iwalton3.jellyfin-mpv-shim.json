@@ -36,20 +36,16 @@
                 {
                     "type": "git",
                     "url": "https://github.com/iwalton3/tkinter-standalone",
-                    "commit": "88aa05075d90d393a29a484bce676e237d311082"
-                },
-                {
-                    "type": "patch",
-                    "path": "tkinter-build.patch"
+                    "commit": "8e78e38ef0cceb44a3a0062e1c314a4ff3f981db"
                 }
             ],
             "modules": [
                 {
-                    "name": "tcl8.6",
+                    "name": "tcl9.0",
                     "buildsystem": "autotools",
                     "subdir": "unix",
                     "post-install": [
-                        "chmod +w ${FLATPAK_DEST}/lib/libtcl8.6.so"
+                        "chmod +w ${FLATPAK_DEST}/lib/libtcl9.0.so"
                     ],
                     "cleanup": [
                         "/bin"
@@ -57,22 +53,22 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://sourceforge.net/projects/tcl/files/Tcl/8.6.17/tcl8.6.17-src.tar.gz",
-                            "sha256": "a3903371efcce8a405c5c245d029e9f6850258a60fa3761c4d58995610949b31",
+                            "url": "https://sourceforge.net/projects/tcl/files/Tcl/9.0.3/tcl9.0.3-src.tar.gz",
+                            "sha256": "2537ba0c86112c8c953f7c09d33f134dd45c0fb3a71f2d7f7691fd301d2c33a6",
                             "x-checker-data": {
                                 "type": "html",
                                 "url": "https://sourceforge.net/projects/tcl/rss",
-                                "pattern": "<link>(https://sourceforge.net/.+/tcl(8\\.6\\.[\\d\\.]*\\d)-src.tar.gz)/download"
+                                "pattern": "<link>(https://sourceforge.net/.+/tcl(9\\.0\\.[\\d\\.]*\\d)-src.tar.gz)/download"
                             }
                         }
                     ]
                 },
                 {
-                    "name": "tk8.6",
+                    "name": "tk9.0",
                     "buildsystem": "autotools",
                     "subdir": "unix",
                     "post-install": [
-                        "chmod +w ${FLATPAK_DEST}/lib/libtk8.6.so"
+                        "chmod +w ${FLATPAK_DEST}/lib/libtcl9tk9.0.so"
                     ],
                     "cleanup": [
                         "/bin",
@@ -81,12 +77,12 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://sourceforge.net/projects/tcl/files/Tcl/8.6.17/tk8.6.17-src.tar.gz",
-                            "sha256": "e4982df6f969c08bf9dd858a6891059b4a3f50dc6c87c10abadbbe2fc4838946",
+                            "url": "https://sourceforge.net/projects/tcl/files/Tcl/9.0.3/tk9.0.3-src.tar.gz",
+                            "sha256": "bf344efadb618babb7933f69275620f72454d1c8220130da93e3f7feb0efbf9b",
                             "x-checker-data": {
                                 "type": "html",
                                 "url": "https://sourceforge.net/projects/tcl/rss",
-                                "pattern": "<link>(https://sourceforge.net/.+/tk(8\\.6\\.[\\d\\.]*\\d)-src.tar.gz)/download"
+                                "pattern": "<link>(https://sourceforge.net/.+/tk(9\\.0\\.[\\d\\.]*\\d)-src.tar.gz)/download"
                             }
                         }
                     ]
