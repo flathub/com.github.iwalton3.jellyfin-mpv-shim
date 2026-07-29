@@ -28,75 +28,6 @@
     ],
     "modules": [
         {
-            "name": "tkinter",
-            "buildsystem": "simple",
-            "build-commands": [
-                "pip3 install --prefix=${FLATPAK_DEST} --no-build-isolation ."
-            ],
-            "sources": [
-                {
-                    "type": "git",
-                    "url": "https://github.com/iwalton3/tkinter-standalone",
-                    "commit": "8e78e38ef0cceb44a3a0062e1c314a4ff3f981db"
-                }
-            ],
-            "modules": [
-                {
-                    "name": "tcl9.0",
-                    "buildsystem": "autotools",
-                    "subdir": "unix",
-                    "config-opts": [
-                        "--disable-zipfs"
-                    ],
-                    "post-install": [
-                        "chmod +w ${FLATPAK_DEST}/lib/libtcl9.0.so"
-                    ],
-                    "cleanup": [
-                        "/bin"
-                    ],
-                    "sources": [
-                        {
-                            "type": "archive",
-                            "url": "https://sourceforge.net/projects/tcl/files/Tcl/9.0.3/tcl9.0.3-src.tar.gz",
-                            "sha256": "2537ba0c86112c8c953f7c09d33f134dd45c0fb3a71f2d7f7691fd301d2c33a6",
-                            "x-checker-data": {
-                                "type": "html",
-                                "url": "https://sourceforge.net/projects/tcl/rss",
-                                "pattern": "<link>(https://sourceforge.net/.+/tcl(9\\.0\\.[\\d\\.]*\\d)-src.tar.gz)/download"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "name": "tk9.0",
-                    "buildsystem": "autotools",
-                    "subdir": "unix",
-                    "config-opts": [
-                        "--disable-zipfs"
-                    ],
-                    "post-install": [
-                        "chmod +w ${FLATPAK_DEST}/lib/libtcl9tk9.0.so"
-                    ],
-                    "cleanup": [
-                        "/bin",
-                        "/lib/tk*/demos"
-                    ],
-                    "sources": [
-                        {
-                            "type": "archive",
-                            "url": "https://sourceforge.net/projects/tcl/files/Tcl/9.0.4/tk9.0.4-src.tar.gz",
-                            "sha256": "d7a146d2917eb8b5cc95276dbf0e3d03c7464d2b19c1675357857c989301dbb4",
-                            "x-checker-data": {
-                                "type": "html",
-                                "url": "https://sourceforge.net/projects/tcl/rss",
-                                "pattern": "<link>(https://sourceforge.net/.+/tk(9\\.0\\.[\\d\\.]*\\d)-src.tar.gz)/download"
-                            }
-                        }
-                    ]
-                }
-            ]
-        },
-        {
             "name": "mpv",
             "buildsystem": "meson",
             "config-opts": [
@@ -307,8 +238,7 @@
                 }
             ]
         },
-        "shared-modules/libappindicator/libappindicator-gtk3-introspection-12.10.json",
-        "shared-modules/libappindicator/libappindicator-gtk3-12.10.json",
+        "shared-modules/libayatana-appindicator/libayatana-appindicator-gtk3.json",
         {
             "name": "jellyfin-mpv-shim",
             "buildsystem": "simple",
