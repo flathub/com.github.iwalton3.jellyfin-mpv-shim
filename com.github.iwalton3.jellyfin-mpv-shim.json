@@ -10,6 +10,7 @@
         "--socket=wayland",
         "--device=dri",
         "--device-if=all:!has-input-device",
+        "--device=input",
         "--share=network",
         "--socket=pulseaudio",
         "--filesystem=xdg-run/pipewire-0:ro",
