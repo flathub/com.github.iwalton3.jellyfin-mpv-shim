@@ -9,7 +9,7 @@
         "--socket=fallback-x11",
         "--socket=wayland",
         "--device=dri",
-        "--device=input",
+        "--device-if=all:!has-input-device",
         "--share=network",
         "--socket=pulseaudio",
         "--filesystem=xdg-run/pipewire-0:ro",
@@ -56,8 +56,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/mpv-player/mpv.git",
-                    "tag": "v0.41.0",
-                    "commit": "41f6a645068483470267271e1d09966ca3b9f413",
+                    "commit": "182fa6ca49f455cadb884858f386e2f00540aeb7",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
@@ -138,7 +137,6 @@
                     ],
                     "sources": [
                         {
-                            "//note": "Fetched by commit, not as `archive/1.3.8.tar.gz`: Codeberg regenerates that tarball, so the sha256 stops matching whenever they change how it is compressed. The tar stream inside is byte-identical; only the gzip wrapper differs.",
                             "type": "git",
                             "url": "https://codeberg.org/ccxvii/mujs.git",
                             "tag": "1.3.8",
