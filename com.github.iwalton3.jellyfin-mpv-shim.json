@@ -57,11 +57,12 @@
                 {
                     "type": "git",
                     "url": "https://github.com/mpv-player/mpv.git",
-                    "commit": "182fa6ca49f455cadb884858f386e2f00540aeb7",
+                    "commit": "41f6a645068483470267271e1d09966ca3b9f413",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
-                    }
+                    },
+                    "tag": "v0.41.0"
                 }
             ],
             "modules": [
