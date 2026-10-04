@@ -58,9 +58,13 @@
                     "type": "git",
                     "url": "https://github.com/mpv-player/mpv.git",
                     "commit": "182fa6ca49f455cadb884858f386e2f00540aeb7",
+                    "//": "v41 has rendering issues",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v([\\d.]+)$"
+                        "tag-pattern": "^v([\\d.]+)$",
+                        "versions": {
+                            ">": "0.41.0"
+                        }
                     }
                 }
             ],
@@ -242,6 +246,28 @@
             ]
         },
         "shared-modules/libayatana-appindicator/libayatana-appindicator-gtk3.json",
+        {
+            "//": "Required for advanced text rendering in image-based UI.",
+            "name": "libraqm",
+            "buildsystem": "meson",
+            "config-opts": [
+                "-Dtests=false",
+                "-Ddocs=false"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/HOST-Oman/libraqm/releases/download/v0.11.0/raqm-0.11.0.tar.xz",
+                    "sha256": "3d0add115f7d4a9410d3377462ed3c05e86342193ef984183e4380e3787b2d4c",
+                    "x-checker-data": {
+                        "type": "json",
+                        "url": "https://api.github.com/repos/HOST-Oman/libraqm/releases/latest",
+                        "version-query": ".tag_name | sub(\"^v\"; \"\")",
+                        "url-query": "\"https://github.com/HOST-Oman/libraqm/releases/download/v\" + $version + \"/raqm-\" + $version + \".tar.xz\""
+                    }
+                }
+            ]
+        },
         {
             "name": "jellyfin-mpv-shim",
             "buildsystem": "simple",
