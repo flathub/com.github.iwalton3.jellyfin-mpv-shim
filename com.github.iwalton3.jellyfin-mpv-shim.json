@@ -15,8 +15,7 @@
         "--socket=pulseaudio",
         "--filesystem=xdg-run/pipewire-0:ro",
         "--talk-name=org.gnome.SessionManager",
-        "--env=LC_NUMERIC=C",
-        "--own-name=org.mpris.MediaPlayer2.jellyfin_mpv_shim"
+        "--env=LC_NUMERIC=C"
     ],
     "cleanup": [
         "/include",
