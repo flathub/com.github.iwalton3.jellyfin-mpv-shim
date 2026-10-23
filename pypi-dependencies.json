@@ -7,11 +7,6 @@
     "sources": [
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/df/82/466a7ce36f8d0a8fea6bf9a2843361405c3ee07cbf99d4fda89ba8880e1c/jellyfin_mpv_shim-3.2.0.tar.gz",
-            "sha256": "26a9df53cd6e40ce96e4d832ea2b997eb08d0f7c1c4978b50c3dc49e0b30aa5c"
-        },
-        {
-            "type": "file",
             "url": "https://files.pythonhosted.org/packages/d8/cb/a5abcc2891249f393827c650c6296660ce40374ac22d99ab9aea41f9d2a2/websocket_client-1.9.2.tar.gz",
             "sha256": "0fcb57545848be86992e128218fd96dd87a6769ffdb1a968dff79632b85604d0"
         },
@@ -27,6 +22,11 @@
         },
         {
             "type": "file",
+            "url": "https://files.pythonhosted.org/packages/a6/bd/1436c50cc46699de0230fbaacc1d1de7bfec413176099949e9d5112e88f2/certifi-2026.10.19.tar.gz",
+            "sha256": "035c1e85572b141bf1c3a3eff0e33a8eb74917522f2559075ff8d2fea780a1ae"
+        },
+        {
+            "type": "file",
             "url": "https://files.pythonhosted.org/packages/e3/05/b17359e1cefb4f909b5e40b1b90a496d987258916dbbf88e842c729f510e/urllib3-2.8.0.tar.gz",
             "sha256": "63bf2ead4c879426ebf22ef2a781eeb4aa3b4ae798a0435506f8687fd5bb9b63"
         },
@@ -37,18 +37,13 @@
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/9e/ec/217a83366a1961f6556a3bb785135feea86675d63c6ed9babb6dcf072ec6/jellyfin_mpv_shim-3.2.0-py3-none-any.whl",
-            "sha256": "98b5e06d0e87fc474fb8a0c9979e5ca99ad6de8de24e0862cddbb826c9c6517b"
+            "url": "https://files.pythonhosted.org/packages/c4/51/29046e48f693c54e5b7412216d447a1d8362c9653148d98c02cdf65fa733/certifi-2026.10.19-py3-none-any.whl",
+            "sha256": "42d35340cc5b9ba78e818ddbff0c5b1c2b779de448a340fd1b989f5fa8670e1b"
         },
         {
             "type": "file",
             "url": "https://files.pythonhosted.org/packages/fc/b8/ff33610932e0ee81ae7f1269c890f697d56ff74b9f5b2ee5d9b7fa2c5355/python_xlib-0.33-py2.py3-none-any.whl",
             "sha256": "c3534038d42e0df2f1392a1b30a15a4ff5fdc2b86cfa94f072bf11b10a164398"
-        },
-        {
-            "type": "file",
-            "url": "https://files.pythonhosted.org/packages/a3/c2/24167ea9858356b47a87a50d39908bfdb72ceeefe0041586e704e5376b3a/certifi-2026.7.22.tar.gz",
-            "sha256": "741e2c3b351ddf169a738da9f2c048608ff7f2c5cc02f1ebc6b118bb090d5d55"
         },
         {
             "type": "file",
@@ -87,13 +82,13 @@
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/0b/a7/71ac2cff56fec219ed242bb11b8efb69fcc4bec75db06fb7bfe35de520e6/certifi-2026.7.22-py3-none-any.whl",
-            "sha256": "62f22742b58a1a33014a2b6b706588a8d7e2a88ae7bd1a6ebe8c992928483775"
+            "url": "https://files.pythonhosted.org/packages/ce/a4/9cc30690a394a8305e8be4c9036aa16d0dfddadd09079860b582f562496d/pillow-13.0.0.tar.gz",
+            "sha256": "cdcd1ba258178f7356d74170c9a81ba4eab6a5d55748bc402a5a2a6fe6be3510"
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/ce/a4/9cc30690a394a8305e8be4c9036aa16d0dfddadd09079860b582f562496d/pillow-13.0.0.tar.gz",
-            "sha256": "cdcd1ba258178f7356d74170c9a81ba4eab6a5d55748bc402a5a2a6fe6be3510"
+            "url": "https://files.pythonhosted.org/packages/07/fd/46c848f37aeec91fa8fc33f61b921bd8764517806601378612ff30f07854/jellyfin_mpv_shim-3.3.0.tar.gz",
+            "sha256": "18075368b33e2dbd1129c03376553773d684b6dbfde77dcceddcaf4006ca7b39"
         },
         {
             "type": "file",
@@ -109,6 +104,11 @@
             "type": "file",
             "url": "https://files.pythonhosted.org/packages/16/d2/a84078ecdde229251284c290109e93c00ddc5f0a0831284ada6bd6cb04d9/python_mpv_jsonipc-1.5.0-py3-none-any.whl",
             "sha256": "f9ce720a07a005c6e37b3eacccffe220ad73cf5d5b0aa9dd77dbe8578be4f249"
+        },
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/71/03/b8d4b73728e25e0e54ca952184bfef07aafce75dd7e055886beed1d10be6/jellyfin_mpv_shim-3.3.0-py3-none-any.whl",
+            "sha256": "4d9236b464d5369922552d06a1313e8e7bfa0dfde53610ccb59291e6e3d5edcc"
         },
         {
             "type": "file",
