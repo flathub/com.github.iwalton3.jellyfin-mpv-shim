@@ -57,7 +57,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/mpv-player/mpv.git",
-                    "commit": "182fa6ca49f455cadb884858f386e2f00540aeb7",
+                    "tag": "v0.42.0",
+                    "commit": "b0841e8c4d156b8403dc1876c4cbd9011eb583f3",
                     "//": "v41 has rendering issues",
                     "x-checker-data": {
                         "type": "git",
@@ -214,8 +215,8 @@
                         {
                             "type": "git",
                             "url": "https://code.videolan.org/videolan/libplacebo.git",
-                            "tag": "v7.360.1",
-                            "commit": "cee9b076f2c63104ccfd497fa79c39a867293ec4",
+                            "tag": "v7.387.0",
+                            "commit": "275f7dea27924cdd34ab2e6c20e448b6bc4fab65",
                             "x-checker-data": {
                                 "type": "git",
                                 "tag-pattern": "^v([\\d.]+)$"
